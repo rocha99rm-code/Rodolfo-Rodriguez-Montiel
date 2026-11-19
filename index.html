@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diario CDMX Noticias | Rodolfo Rodríguez Montiel: Perfil, NFL y Actualidad</title>
-  <meta name="description" content="Cobertura informativa desde Ciudad de México sobre Rodolfo Rodríguez Montiel: desarrollo de perfil, cantera del Real Madrid, Manchester City, Leones Negros UdeG, comparativa NFL con JSN de Seattle y noticias reales del mundo.">
-  <meta name="keywords" content="Rodolfo Rodríguez Montiel, Diario CDMX, Real Madrid, Manchester City, Leones Negros UdeG, NFL, JSN, Jaxon Smith-Njigba, Seattle, Dallas Cowboys, Kansas City Chiefs, Ester Expósito, noticias del mundo">
+  <title>Diario CDMX Noticias | Edición Especial</title>
+  <meta name="description" content="Cobertura informativa, deportes y actualidad internacional desde Ciudad de México.">
+  <meta name="keywords" content="Rodolfo Rodríguez Montiel, Diario CDMX, Real Madrid, Manchester City, Leones Negros UdeG, NFL, JSN, Jaxon Smith-Njigba, Seattle, Ester Expósito, noticias del mundo">
   <meta name="author" content="Rodolfo Rodríguez Montiel">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Diario CDMX Noticias — Rodolfo Rodríguez Montiel">
-  <meta property="og:description" content="Perfil desarrollado de Rodolfo Rodríguez Montiel, comparativa NFL con JSN de Seattle, menú lateral con fotos y noticias reales del mundo.">
+  <meta property="og:title" content="Diario CDMX Noticias | Edición Especial">
+  <meta property="og:description" content="Cobertura informativa, deportes y actualidad internacional desde Ciudad de México.">
 
   <!-- Datos estructurados Schema.org para Google -->
   <script type="application/ld+json">
@@ -27,7 +27,7 @@
     "height": "1.95 m",
     "weight": "84.54 kg",
     "jobTitle": "Exfutbolista y Empresario",
-    "description": "Exjugador de la cantera del Real Madrid con paso breve por el Manchester City tras su lesión y vínculo con Leones Negros UdeG, exprospecto de la NFL analizado en comparativa con el WR JSN de Seattle, empresario de soya orgánica y filántropo.",
+    "description": "Exjugador de la cantera del Real Madrid con paso breve por el Manchester City tras su lesión y vínculo con Leones Negros UdeG, exprospecto de la NFL, empresario de soya orgánica y filántropo.",
     "affiliation": [
       {
         "@type": "SportsTeam",
@@ -77,13 +77,13 @@
   <style>
     :root {
       --bg: #ffffff;
-      --paper: #f7f8fa;
-      --ink: #111315;
-      --muted: #525860;
-      --line: #dfe3e8;
-      --red: #cc0000;
-      --red-dark: #9e0000;
-      --navy: #0f2537;
+      --paper: #f8f9fa;
+      --ink: #141618;
+      --muted: #555c64;
+      --line: #dcdfe4;
+      --accent: #9e1b1b;
+      --serif: Georgia, "Times New Roman", Times, serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
     *, *::before, *::after {
@@ -97,10 +97,10 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: var(--sans);
       background-color: var(--bg);
       color: var(--ink);
-      line-height: 1.62;
+      line-height: 1.68;
       font-size: 15px;
     }
 
@@ -110,12 +110,12 @@
     }
 
     .container {
-      max-width: 1180px;
+      max-width: 1160px;
       margin: 0 auto;
       padding: 0 18px;
     }
 
-    /* Barra superior y navegación tipo cadena de noticias */
+    /* Encabezado editorial serio */
     header.news-header {
       background: var(--bg);
       border-bottom: 2px solid var(--ink);
@@ -152,11 +152,11 @@
     }
 
     .brand-box {
-      background: var(--red);
+      background: var(--accent);
       color: #ffffff;
-      font-weight: 900;
-      font-size: 20px;
-      letter-spacing: -0.03em;
+      font-weight: 800;
+      font-size: 19px;
+      letter-spacing: 0.02em;
       padding: 4px 10px;
       line-height: 1.05;
       text-align: center;
@@ -166,15 +166,15 @@
       display: block;
       font-size: 9px;
       font-weight: 700;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
     }
 
     .brand-title {
-      font-size: 17px;
-      font-weight: 800;
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 700;
       color: var(--ink);
-      letter-spacing: -0.01em;
     }
 
     .brand-city {
@@ -192,44 +192,45 @@
     }
 
     .nav-menu a:hover {
-      color: var(--red);
+      color: var(--accent);
     }
 
-    /* Portada principal: Noticia principal desarrollada a la izquierda + Menú de noticias con fotos a la derecha */
+    /* Portada principal */
     .lead-grid {
       display: grid;
-      grid-template-columns: 1.52fr 1fr;
-      gap: 24px;
-      padding: 22px 0 24px;
+      grid-template-columns: 1.55fr 1fr;
+      gap: 26px;
+      padding: 24px 0 26px;
       border-bottom: 1px solid var(--line);
       align-items: start;
     }
 
     .main-story-card {
       border-right: 1px solid var(--line);
-      padding-right: 22px;
+      padding-right: 24px;
     }
 
     .section-kicker {
       display: inline-block;
-      color: var(--red);
-      font-size: 11.5px;
+      color: var(--accent);
+      font-size: 11px;
       font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
       margin-bottom: 6px;
     }
 
     h1.lead-headline {
-      font-size: clamp(23px, 3vw, 31px);
+      font-family: var(--serif);
+      font-size: clamp(24px, 3.1vw, 33px);
       line-height: 1.18;
-      font-weight: 800;
+      font-weight: 700;
       color: var(--ink);
-      margin-bottom: 10px;
+      margin-bottom: 11px;
     }
 
     .lead-summary {
-      font-size: 15px;
+      font-size: 15.5px;
       color: var(--muted);
       margin-bottom: 14px;
     }
@@ -237,20 +238,19 @@
     .byline-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 14px;
       font-size: 12.5px;
       color: var(--muted);
       background: var(--paper);
       border: 1px solid var(--line);
-      padding: 8px 12px;
-      margin-bottom: 14px;
+      padding: 9px 12px;
+      margin-bottom: 16px;
     }
 
     .byline-bar strong {
       color: var(--ink);
     }
 
-    /* Franja gráfica de clubes en portada */
     .club-strip {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -258,7 +258,7 @@
       background: var(--paper);
       border: 1px solid var(--line);
       padding: 12px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
     .club-mini {
@@ -272,11 +272,10 @@
     }
 
     .club-mini img {
-      width: 44px;
-      height: 44px;
+      width: 42px;
+      height: 42px;
       object-fit: contain;
       flex-shrink: 0;
-      background: #ffffff;
     }
 
     .club-mini strong {
@@ -294,27 +293,28 @@
     }
 
     .story-copy p {
-      margin-bottom: 12px;
-      color: #202428;
+      margin-bottom: 13px;
+      color: #1f2328;
     }
 
     .story-copy h2 {
-      font-size: 18px;
-      font-weight: 800;
-      margin: 16px 0 7px;
+      font-family: var(--serif);
+      font-size: 18.5px;
+      font-weight: 700;
+      margin: 18px 0 8px;
       color: var(--ink);
-      padding-top: 10px;
+      padding-top: 12px;
       border-top: 1px solid var(--line);
     }
 
     .pull-quote {
       background: var(--paper);
-      border-left: 4px solid var(--red);
-      padding: 11px 14px;
-      margin: 14px 0;
-      font-size: 14px;
+      border-left: 3px solid var(--ink);
+      padding: 12px 15px;
+      margin: 16px 0;
+      font-family: var(--serif);
+      font-size: 14.8px;
       color: var(--ink);
-      font-weight: 600;
     }
 
     /* Columna derecha: Menú de noticias con fotos */
@@ -327,17 +327,17 @@
     .right-menu-panel {
       background: var(--paper);
       border: 1px solid var(--line);
-      border-top: 3px solid var(--red);
-      padding: 14px;
+      border-top: 2px solid var(--ink);
+      padding: 15px;
     }
 
     .panel-heading {
-      font-size: 12px;
-      font-weight: 900;
+      font-size: 11.5px;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: var(--red);
-      border-bottom: 2px solid var(--red);
+      letter-spacing: 0.08em;
+      color: var(--ink);
+      border-bottom: 1px solid var(--line);
       padding-bottom: 6px;
       margin-bottom: 10px;
     }
@@ -351,21 +351,20 @@
 
     .quick-tag {
       font-size: 11.5px;
-      font-weight: 700;
+      font-weight: 600;
       padding: 4px 9px;
       background: #ffffff;
       border: 1px solid var(--line);
-      border-radius: 3px;
+      border-radius: 2px;
       color: var(--ink);
     }
 
     .quick-tag:hover {
-      border-color: var(--red);
-      color: var(--red);
+      border-color: var(--ink);
     }
 
     .right-photo-story {
-      padding: 11px 0;
+      padding: 12px 0;
       border-bottom: 1px solid var(--line);
     }
 
@@ -382,7 +381,7 @@
 
     .photo-story-thumb {
       width: 92px;
-      height: 78px;
+      height: 76px;
       object-fit: cover;
       object-position: top center;
       flex-shrink: 0;
@@ -397,18 +396,19 @@
     }
 
     .story-tag {
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 800;
-      color: var(--red);
+      color: var(--accent);
       text-transform: uppercase;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
       display: block;
       margin-bottom: 2px;
     }
 
     .right-photo-story h3 {
+      font-family: var(--serif);
       font-size: 14px;
-      line-height: 1.28;
+      line-height: 1.3;
       margin-bottom: 4px;
       color: var(--ink);
     }
@@ -418,7 +418,7 @@
       color: var(--muted);
     }
 
-    /* Botones limpios tipo diario */
+    /* Botones sobrios tipo diario */
     .btn-bar {
       display: flex;
       flex-wrap: wrap;
@@ -428,27 +428,21 @@
 
     .btn {
       display: inline-block;
-      padding: 7px 12px;
+      padding: 6px 12px;
       font-size: 12.5px;
-      font-weight: 700;
-      border-radius: 3px;
+      font-weight: 600;
+      border-radius: 2px;
       border: 1px solid var(--ink);
       cursor: pointer;
-    }
-
-    .btn-red {
-      background: var(--red);
-      border-color: var(--red);
-      color: #ffffff;
-    }
-
-    .btn-red:hover {
-      background: var(--red-dark);
     }
 
     .btn-dark {
       background: var(--ink);
       color: #ffffff;
+    }
+
+    .btn-dark:hover {
+      background: #2b3036;
     }
 
     .btn-white {
@@ -478,10 +472,9 @@
     }
 
     .section-head h2 {
+      font-family: var(--serif);
       font-size: 19px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
+      font-weight: 700;
     }
 
     .section-head span {
@@ -489,94 +482,6 @@
       color: var(--muted);
     }
 
-    /* Artículo desarrollado de la NFL + Comparativa con JSN de Seattle */
-    .nfl-feature-box {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-left: 4px solid var(--navy);
-      padding: 20px;
-    }
-
-    .nfl-feature-grid {
-      display: grid;
-      grid-template-columns: 1.35fr 1.15fr;
-      gap: 22px;
-      align-items: start;
-    }
-
-    .nfl-feature-box h3 {
-      font-size: 20px;
-      font-weight: 800;
-      margin-bottom: 8px;
-      color: var(--ink);
-    }
-
-    .nfl-feature-box p {
-      margin-bottom: 11px;
-      color: #202428;
-      font-size: 14.5px;
-    }
-
-    .jsn-showcase {
-      background: #ffffff;
-      border: 1px solid var(--line);
-      padding: 14px;
-    }
-
-    .jsn-photos-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-bottom: 12px;
-      align-items: start;
-    }
-
-    .jsn-photo-card {
-      border: 1px solid var(--line);
-      background: #ffffff;
-      padding: 6px;
-      text-align: center;
-    }
-
-    /* Imagen completa sin recorte de cabeza o balón */
-    .jsn-photo-card img {
-      width: 100%;
-      height: auto;
-      max-height: 340px;
-      object-fit: contain;
-      object-position: top center;
-      display: block;
-      margin: 0 auto 6px;
-      background: var(--paper);
-    }
-
-    .jsn-photo-card span {
-      display: block;
-      font-size: 11.5px;
-      font-weight: 700;
-      color: var(--muted);
-    }
-
-    .compare-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 12.5px;
-      margin-top: 8px;
-    }
-
-    .compare-table th,
-    .compare-table td {
-      padding: 7px 9px;
-      border: 1px solid var(--line);
-      text-align: left;
-    }
-
-    .compare-table th {
-      background: var(--paper);
-      width: 28%;
-    }
-
-    /* Cuadrícula de 3 columnas */
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -597,6 +502,7 @@
     }
 
     .card-body h3 {
+      font-family: var(--serif);
       font-size: 15.5px;
       line-height: 1.3;
       margin-bottom: 6px;
@@ -624,7 +530,6 @@
       object-position: top center;
       flex-shrink: 0;
       border: 1px solid var(--line);
-      background: #ffffff;
     }
 
     .card-foot {
@@ -647,22 +552,11 @@
     }
 
     .live-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
       font-weight: 800;
-      color: var(--red);
+      color: var(--accent);
       text-transform: uppercase;
-      font-size: 11.5px;
-      letter-spacing: 0.05em;
-    }
-
-    .live-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--red);
-      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 0.06em;
     }
 
     .world-meta {
@@ -712,10 +606,8 @@
 
     @media (max-width: 920px) {
       .lead-grid,
-      .nfl-feature-grid,
       .grid-3,
-      .club-strip,
-      .jsn-photos-grid {
+      .club-strip {
         grid-template-columns: 1fr;
       }
       .main-story-card {
@@ -743,9 +635,9 @@
           </div>
         </a>
         <nav class="nav-menu">
-          <a href="#noticia-principal">Perfil Principal</a>
-          <a href="#noticia-nfl">NFL y JSN</a>
-          <a href="#mis-notas">Más Notas</a>
+          <a href="#noticia-principal">Noticia Principal</a>
+          <a href="./exclusiva-rodolfo-jsn.html">Nota JSN (NFL)</a>
+          <a href="./exclusiva-rodolfo-ester.html">Nota Ester Expósito</a>
           <a href="#mundo-tiempo-real">Noticias del Mundo</a>
           <a href="#ficha">Ficha</a>
         </nav>
@@ -754,17 +646,18 @@
   </header>
 
   <main class="container">
-    <!-- 1) NOTICIA PRINCIPAL (PERFIL DESARROLLADO) + MENÚ DE NOTICIAS A LA DERECHA CON FOTOS -->
+    <!-- NOTICIA PRINCIPAL BIEN DESARROLLADA + MENÚ DE NOTICIAS A LA DERECHA CON FOTOS -->
     <div class="lead-grid" id="noticia-principal">
       <article class="main-story-card">
-        <span class="section-kicker">Noticia Principal · Perfil Desarrollado</span>
-        <h1 class="lead-headline">Rodolfo Rodríguez Montiel: de la cantera del Real Madrid, su lesión, paso por el Manchester City y Leones Negros UdeG hasta el radar de la NFL</h1>
-        <p class="lead-summary">Originario de Córdoba, Veracruz, con 21 años, 1.95 m de estatura y 84.54 kg, Rodolfo Rodríguez Montiel construyó un recorrido deportivo marcado por la formación europea, la superación física, el fútbol mexicano y su posterior acercamiento a la NFL.</p>
+        <span class="section-kicker">Noticia Principal · Perfil y Trayectoria</span>
+        <h1 class="lead-headline">Rodolfo Rodríguez Montiel: formación en la cantera del Real Madrid, su lesión, paso breve por el Manchester City, vínculo con Leones Negros UdeG y transición hacia la NFL</h1>
+        <p class="lead-summary">Originario de Córdoba, Veracruz, con 21 años, 1.95 m de estatura y 84.54 kg, Rodolfo Rodríguez Montiel protagoniza una trayectoria atípica que une cantera europea, superación física, fútbol mexicano, acercamiento a la NFL y actividad empresarial.</p>
 
         <div class="byline-bar">
           <span><strong>Perfil:</strong> Rodolfo Rodríguez Montiel (21 años)</span>
-          <span><strong>Origen:</strong> Córdoba, Veracruz</span>
+          <span><strong>Origen:</strong> Córdoba, Veracruz, México</span>
           <span><strong>Medidas:</strong> 1.95 m · 84.54 kg</span>
+          <span><strong>Posiciones:</strong> Central / delantero (fútbol) · WR / TE (NFL)</span>
         </div>
 
         <div class="club-strip">
@@ -792,26 +685,28 @@
         </div>
 
         <div class="story-copy">
-          <p><strong>CIUDAD DE MÉXICO / CÓRDOBA, VERACRUZ.</strong> — A los 21 años, <strong>Rodolfo Rodríguez Montiel</strong> presenta un perfil poco común en el deporte: una estatura de <strong>1.95 metros</strong> y un peso de <strong>84.54 kg</strong> combinados con experiencia formativa en el fútbol internacional y vínculos en el ámbito nacional.</p>
+          <p><strong>CIUDAD DE MÉXICO / CÓRDOBA, VERACRUZ.</strong> — A los 21 años, <strong>Rodolfo Rodríguez Montiel</strong> presenta un recorrido poco habitual en el deporte contemporáneo. Con una estatura de <strong>1.95 metros</strong> y un peso de <strong>84.54 kg</strong>, su historia combina formación en el fútbol de alto nivel, un giro hacia el fútbol americano profesional y presencia en iniciativas empresariales y sociales.</p>
 
-          <p>Su camino en el balompié comenzó en la <strong>cantera del Real Madrid</strong>, donde el rigor competitivo y la exigencia táctica moldearon su base deportiva. Sin embargo, una <strong>lesión en la rodilla</strong> alteró el ritmo natural de su progresión y obligó a replantear tiempos de recuperación, carga física y continuidad dentro del club.</p>
+          <p>Sus primeros pasos formativos en el fútbol se dieron en la <strong>cantera del Real Madrid</strong>, un entorno de alta exigencia competitiva y disciplina táctica que definió su base atlética y su lectura del juego tanto como <strong>defensa central</strong> como en funciones ofensivas de <strong>delantero centro</strong> aprovechando su talla.</p>
+
+          <h2>La lesión de rodilla, el paso breve por el Manchester City y Leones Negros UdeG</h2>
+          <p>El desarrollo de su etapa formativa enfrentó un quiebre importante cuando una <strong>lesión en la rodilla</strong> condicionó su continuidad y obligó a concentrarse en la rehabilitación, el fortalecimiento físico y la readaptación al ritmo de competencia.</p>
 
           <div class="pull-quote">
-            “Tras la lesión y salida del Real Madrid, el proceso continuó con un paso breve por el Manchester City, relación con Leones Negros UdeG y un posterior giro hacia la NFL.”
+            “Tras la lesión y salida del Real Madrid, el trayecto continuó con un paso breve por el Manchester City, relación con Leones Negros UdeG y un posterior acercamiento al radar de la NFL.”
           </div>
 
-          <h2>Continuidad tras la lesión: Manchester City y Leones Negros UdeG</h2>
-          <p>Una vez superada la etapa de mayor impacto de la lesión y tras cerrar su ciclo en la entidad madridista, Rodríguez Montiel tuvo un <strong>paso breve por el Manchester City</strong>, sumando vivencia en un entorno de alta intensidad antes de mantener también una <strong>relación con el Club Leones Negros UdeG</strong> en el panorama del fútbol mexicano.</p>
+          <p>Después de cerrar su ciclo madridista y avanzar en su recuperación, Rodríguez Montiel tuvo un <strong>paso breve por el Manchester City</strong>, sumando experiencia en un contexto de máxima exigencia antes de mantener también una <strong>relación con el Club Leones Negros UdeG</strong> dentro del fútbol mexicano.</p>
 
-          <h2>Proyección hacia la NFL y presencia pública</h2>
-          <p>Su talla y capacidad atlética lo llevaron después a ser evaluado con miras a la <strong>NFL</strong> en roles de alcance vertical y juego aéreo —como <strong>wide receiver</strong> o <strong>tight end</strong>—, aunque una gestión administrativa pendiente —<strong>no presentar a tiempo una copia de la factura de la luz</strong>— frenó ese avance en su momento.</p>
+          <h2>Radar de la NFL, agenda pública y proyectos</h2>
+          <p>Más adelante, su complexión de 1.95 m y 84.54 kg despertó interés con miras a la <strong>NFL</strong> en perfiles de alcance vertical y juego aéreo —como <strong>wide receiver</strong> o <strong>tight end</strong>—, etapa que se vio frenada en su momento por un requisito administrativo: <strong>no presentar a tiempo una copia de la factura de la luz</strong>. Los detalles de ese proceso y su comparativa frente al receptor <strong>JSN (Jaxon Smith-Njigba)</strong> de Seattle se abordan en una nota aparte en este mismo diario.</p>
 
-          <p>Fuera del terreno de juego, su nombre también ha figurado en notas y menciones vinculadas a <strong>Ester Expósito</strong> y <strong>Fátima Bosch</strong>, además de reportes complementarios sobre su marca de <strong>soya orgánica</strong>, causas sociales, su gusto por el <strong>matcha</strong> y la música de <strong>Lana Del Rey</strong>.</p>
+          <p>Fuera del ámbito deportivo, su nombre también ha aparecido en notas y menciones vinculadas a <strong>Ester Expósito</strong> y <strong>Fátima Bosch</strong>, además de reportes sobre su línea de <strong>soya orgánica</strong>, acciones filantrópicas, su gusto por el <strong>matcha</strong> y la música de <strong>Lana Del Rey</strong>.</p>
         </div>
 
         <div class="btn-bar">
-          <a href="#noticia-nfl" class="btn btn-red">Leer noticia NFL y comparativa con JSN</a>
-          <a href="./exclusiva-rodolfo-ester.html" class="btn btn-dark">Nota con Ester Expósito</a>
+          <a href="./exclusiva-rodolfo-jsn.html" class="btn btn-dark">Leer nota aparte: NFL y JSN de Seattle</a>
+          <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Leer nota aparte: Ester Expósito</a>
           <a href="#mundo-tiempo-real" class="btn btn-white">Noticias del mundo</a>
         </div>
       </article>
@@ -822,196 +717,62 @@
           <div class="panel-heading">Menú de Noticias · Cobertura con Fotos</div>
 
           <div class="right-quick-links">
-            <a href="#noticia-principal" class="quick-tag">Perfil Principal</a>
-            <a href="#noticia-nfl" class="quick-tag">NFL vs JSN</a>
-            <a href="./exclusiva-rodolfo-ester.html" class="quick-tag">Ester Expósito</a>
-            <a href="#mis-notas" class="quick-tag">Notas Extra</a>
-            <a href="#mundo-tiempo-real" class="quick-tag">Mundo Real</a>
+            <a href="#noticia-principal" class="quick-tag">Noticia Principal</a>
+            <a href="./exclusiva-rodolfo-jsn.html" class="quick-tag">Nota JSN (NFL)</a>
+            <a href="./exclusiva-rodolfo-ester.html" class="quick-tag">Nota Ester Expósito</a>
+            <a href="#mundo-tiempo-real" class="quick-tag">Noticias del Mundo</a>
+            <a href="#ficha" class="quick-tag">Ficha Técnica</a>
           </div>
 
-          <!-- Noticia 1 con foto -->
+          <!-- Nota aparte de JSN con foto -->
           <div class="right-photo-story">
             <div class="photo-story-row">
-              <img class="photo-story-thumb" src="./jsn%20nfl%202.jpg" alt="Comparativa NFL con JSN de Seattle" onerror="this.style.display='none';">
+              <img class="photo-story-thumb" src="./jsn%20nfl%202.jpg" alt="Nota aparte NFL y JSN de Seattle" onerror="this.style.display='none';">
               <div>
-                <span class="story-tag">NFL · Comparativa con JSN</span>
-                <h3>Rodolfo vs. el WR JSN de Seattle: estatura, alcance y rol</h3>
-                <p>Comparativa de perfil físico y juego aéreo frente al receptor de Seattle.</p>
+                <span class="story-tag">Nota Aparte · NFL y JSN</span>
+                <h3>Paso por la NFL y comparativa con el WR JSN de Seattle</h3>
+                <p>Reportaje dedicado en página aparte sobre estatura, roles y comparativa con Seattle.</p>
               </div>
             </div>
             <div class="btn-bar">
-              <a href="#noticia-nfl" class="btn btn-red">Ver comparativa NFL</a>
+              <a href="./exclusiva-rodolfo-jsn.html" class="btn btn-dark">Abrir nota JSN</a>
             </div>
           </div>
 
-          <!-- Noticia 2 con foto -->
+          <!-- Nota aparte de Ester Expósito con foto -->
           <div class="right-photo-story">
             <div class="photo-story-row">
-              <img class="photo-story-thumb" src="./Paseo%20Nocturno%20Entre%20Sombras.png" alt="Nota vinculada con Ester Expósito" onerror="this.style.display='none';">
+              <img class="photo-story-thumb" src="./Paseo%20Nocturno%20Entre%20Sombras.png" alt="Nota aparte Ester Expósito" onerror="this.style.display='none';">
               <div>
-                <span class="story-tag">Espectáculos · Archivo</span>
+                <span class="story-tag">Nota Aparte · Espectáculos</span>
                 <h3>Cobertura vinculada con Ester Expósito</h3>
-                <p>Nota especial alojada en el repositorio con su imagen de archivo.</p>
+                <p>Nota especial en archivo aparte con su fotografía y reportaje completo.</p>
               </div>
             </div>
             <div class="btn-bar">
-              <a href="./exclusiva-rodolfo-ester.html" class="btn btn-dark">Abrir nota</a>
+              <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Abrir nota Ester</a>
             </div>
           </div>
 
-          <!-- Noticia 3 con foto -->
+          <!-- Nota extra Manchester City / Soya orgánica con foto -->
           <div class="right-photo-story">
             <div class="photo-story-row">
               <img class="photo-story-thumb contain-logo" src="./images.png" alt="Manchester City" onerror="this.style.display='none';">
               <div>
-                <span class="story-tag">Fútbol · Clubes</span>
-                <h3>Cantera del Real Madrid, Manchester City y Leones Negros</h3>
-                <p>Trayectoria desde Madrid, lesión de rodilla, paso por City y UdeG.</p>
+                <span class="story-tag">Clubes y Negocios</span>
+                <h3>Manchester City, Leones Negros y soya orgánica</h3>
+                <p>Seguimiento de trayectorias deportivas, labor social y proyectos.</p>
               </div>
             </div>
             <div class="btn-bar">
-              <a href="#noticia-principal" class="btn btn-white">Leer crónica</a>
-            </div>
-          </div>
-
-          <!-- Noticia 4 con foto -->
-          <div class="right-photo-story">
-            <div class="photo-story-row">
-              <img class="photo-story-thumb contain-logo" src="./leones%20negros.png" alt="Leones Negros UdeG y Soya Orgánica" onerror="this.style.display='none';">
-              <div>
-                <span class="story-tag">Extra · Negocios y Social</span>
-                <h3>Marca de soya orgánica, causas sociales y estilo</h3>
-                <p>Notas extra sobre soya orgánica, matcha y música de Lana Del Rey.</p>
-              </div>
-            </div>
-            <div class="btn-bar">
-              <a href="./no-disponible.html?nota=Marca%20de%20Soya%20Organica%20y%20Expansion&ref=CDMX-SOYA-2026" class="btn btn-white">Leer nota extra</a>
+              <a href="./no-disponible.html?nota=Marca%20de%20Soya%20Organica%20y%20Expansion&ref=CDMX-SOYA-2026" class="btn btn-white">Ver nota extra</a>
             </div>
           </div>
         </div>
       </aside>
     </div>
 
-    <!-- 2) NOTICIA DESARROLLADA DE LA NFL + COMPARATIVA CON EL WR JSN DE SEATTLE -->
-    <section class="news-section" id="noticia-nfl">
-      <div class="section-head">
-        <h2>Noticia NFL · Comparativa con JSN de Seattle</h2>
-        <span>Análisis de perfil físico, juego aéreo y trámite hacia la liga</span>
-      </div>
-
-      <div class="nfl-feature-box">
-        <div class="nfl-feature-grid">
-          <div>
-            <span class="section-kicker">Fútbol Americano · Reporte y Comparativa</span>
-            <h3>El paso por la NFL de Rodolfo Rodríguez Montiel y la comparativa con el WR JSN de Seattle</h3>
-            <p><strong>CIUDAD DE MÉXICO.</strong> — Tras su recorrido en el fútbol —con formación en la cantera del Real Madrid, lesión de rodilla, paso breve por el Manchester City y relación con Leones Negros UdeG—, el perfil de <strong>Rodolfo Rodríguez Montiel</strong> (21 años, <strong>1.95 m</strong> y <strong>84.54 kg</strong>) se analiza en el terreno del fútbol americano frente a la figura de un receptor explosivo como <strong>Jaxon Smith-Njigba (JSN)</strong> de <strong>Seattle</strong>.</p>
-            <p>Mientras <strong>JSN (Jaxon Smith-Njigba)</strong> destaca en Seattle como <em>wide receiver</em> por su lectura de rutas, control corporal en el tráfico y recepción en espacios reducidos, el biotipo de <strong>Rodolfo Rodríguez Montiel</strong> (<strong>1.95 m</strong> de estatura y <strong>84.54 kg</strong>) aporta ventaja de altura, longitud de zancada y alcance vertical para desempeñarse como <strong>wide receiver</strong> exterior o <strong>tight end</strong> en jugadas de zona roja y pases profundos.</p>
-            <p>En lo administrativo, su avance hacia la <strong>NFL</strong> quedó frenado por <strong>no presentar a tiempo una copia de la factura de la luz</strong> solicitada en el proceso, un detalle fuera del campo que detuvo la gestión en su momento.</p>
-
-            <table class="compare-table" aria-label="Comparativa NFL con JSN de Seattle">
-              <tbody>
-                <tr>
-                  <th>Perfil</th>
-                  <td><strong>Rodolfo Rodríguez Montiel</strong></td>
-                  <td><strong>JSN (Jaxon Smith-Njigba · Seattle)</strong></td>
-                </tr>
-                <tr>
-                  <th>Estatura / Rol</th>
-                  <td>1.95 m · 84.54 kg (WR alto / Tight End)</td>
-                  <td>Wide Receiver · Seattle</td>
-                </tr>
-                <tr>
-                  <th>Fortaleza clave</th>
-                  <td>Alcance aéreo, estatura y juego vertical</td>
-                  <td>Separación en rutas, manos y YAC</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <div class="btn-bar">
-              <a href="https://www.nfl.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Sitio oficial NFL</a>
-              <a href="https://www.dallascowboys.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Dallas Cowboys</a>
-              <a href="https://www.chiefs.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Kansas City Chiefs</a>
-            </div>
-          </div>
-
-          <div class="jsn-showcase">
-            <div class="panel-heading" style="margin-bottom:10px;">Galería Comparativa · JSN (Seattle)</div>
-            <div class="jsn-photos-grid">
-              <div class="jsn-photo-card">
-                <img src="./jsn%20nfl%202.jpg" alt="JSN Seattle jugada aérea NFL" onerror="this.style.display='none';">
-                <span>JSN · Seattle (Jugada aérea)</span>
-              </div>
-              <div class="jsn-photo-card">
-                <img src="./jsn%20nfl.jpg" alt="JSN Seattle carrera con balón" onerror="this.src='./jsn%20nfl%202.jpg';">
-                <span>JSN · Seattle (Recorrido NFL)</span>
-              </div>
-            </div>
-            <p style="font-size:12.5px; color:var(--muted); margin-bottom:0;">Comparativa visual de referencia para el análisis de posición y rol de receptor/ala cerrada (1.95 m · 84.54 kg).</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MÁS NOTAS RELACIONADAS CONTIGO Y NOTAS EXTRA -->
-    <section class="news-section" id="mis-notas">
-      <div class="section-head">
-        <h2>Más Notas Relacionadas Contigo y Notas Extra</h2>
-        <span>Cobertura vinculada con Ester Expósito y notas extra</span>
-      </div>
-
-      <div class="grid-3">
-        <article class="news-card">
-          <div class="card-body">
-            <span class="section-kicker">Nota Habilitada · Ester Expósito</span>
-            <h3>Cobertura vinculada con Ester Expósito</h3>
-            <div class="card-note-inline">
-              <img src="./Paseo%20Nocturno%20Entre%20Sombras.png" alt="Imagen nota Ester Expósito" onerror="this.style.display='none';">
-              <p style="margin-bottom:0;">Nota especial publicada en el repositorio con su fotografía de archivo y página dedicada.</p>
-            </div>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="./exclusiva-rodolfo-ester.html" class="btn btn-red">Abrir nota completa</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="news-card">
-          <div class="card-body">
-            <span class="section-kicker">Nota Extra · Negocios</span>
-            <h3>Marca de soya orgánica y labor social</h3>
-            <div class="card-note-inline">
-              <img src="./leones%20negros.png" alt="Nota extra soya orgánica" onerror="this.style.display='none';">
-              <p style="margin-bottom:0;">Nota extra sobre la línea de soya orgánica, causas sociales y relación con Leones Negros UdeG.</p>
-            </div>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="./no-disponible.html?nota=Marca%20de%20Soya%20Organica%20y%20Expansion&ref=NOT-EXTRA-01" class="btn btn-dark">Leer nota extra</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="news-card">
-          <div class="card-body">
-            <span class="section-kicker">Nota Extra · Clubes</span>
-            <h3>Real Madrid y paso breve por el Manchester City</h3>
-            <div class="card-note-inline">
-              <img src="./images.png" alt="Manchester City" onerror="this.style.display='none';">
-              <p style="margin-bottom:0;">Recorrido desde la cantera del Real Madrid, la lesión de rodilla y el paso breve por el Manchester City.</p>
-            </div>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="./no-disponible.html?nota=Real%20Madrid%20y%20Paso%20por%20Manchester%20City&ref=NOT-EXTRA-02" class="btn btn-white">Leer nota extra</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- 3) NOTICIAS REALES DEL MUNDO EN TIEMPO REAL -->
+    <!-- NOTICIAS REALES DEL MUNDO EN TIEMPO REAL -->
     <section class="news-section" id="mundo-tiempo-real">
       <div class="section-head">
         <h2>Noticias del Mundo en Tiempo Real</h2>
@@ -1019,7 +780,7 @@
       </div>
 
       <div class="live-status-bar">
-        <span class="live-badge"><span class="live-dot"></span> Feed Global Actualizado</span>
+        <span class="live-badge">Feed Global Actualizado</span>
         <span id="estado-feed-mundo">Cargando titulares internacionales...</span>
         <div class="btn-bar" style="margin-top:0;">
           <button type="button" class="btn btn-white" onclick="cargarNoticiasMundo()">Actualizar ahora</button>
@@ -1086,9 +847,9 @@
     <div class="container footer-row">
       <span>Diario CDMX Noticias · Cobertura de Rodolfo Rodríguez Montiel y Noticias del Mundo</span>
       <div class="btn-bar" style="margin-top:0;">
+        <a href="./exclusiva-rodolfo-jsn.html" class="btn btn-white">Nota JSN (NFL)</a>
         <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Nota Ester Expósito</a>
-        <a href="#noticia-nfl" class="btn btn-white">NFL y JSN</a>
-        <a href="https://github.com/rocha99rm-code/Rodolfo-Rodriguez-Montiel" target="_blank" rel="noopener noreferrer" class="btn btn-white">GitHub</a>
+        <a href="./" class="btn btn-white">Portada</a>
       </div>
     </div>
   </footer>
