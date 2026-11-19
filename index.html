@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diario CDMX Noticias | Rodolfo Rodríguez Montiel: Perfil, Deportes y Empresa</title>
-  <meta name="description" content="Cobertura informativa desde Ciudad de México sobre Rodolfo Rodríguez Montiel: cantera del Real Madrid, paso breve por el Manchester City, vínculo con Leones Negros UdeG, proyección en la NFL y marca de soya orgánica.">
-  <meta name="keywords" content="Rodolfo Rodríguez Montiel, Diario CDMX, Real Madrid, Manchester City, Leones Negros UdeG, NFL, Dallas Cowboys, Kansas City Chiefs, soya orgánica, noticias del mundo">
+  <title>Diario CDMX Noticias | Rodolfo Rodríguez Montiel y Noticias del Mundo</title>
+  <meta name="description" content="Portal informativo con sede en Ciudad de México: noticias relacionadas con Rodolfo Rodríguez Montiel (Real Madrid, Manchester City, Leones Negros UdeG, NFL) y cobertura real de noticias del mundo.">
+  <meta name="keywords" content="Rodolfo Rodríguez Montiel, Diario CDMX, Real Madrid, Manchester City, Leones Negros UdeG, NFL, Dallas Cowboys, Kansas City Chiefs, Ester Expósito, noticias del mundo">
   <meta name="author" content="Rodolfo Rodríguez Montiel">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Diario CDMX Noticias — Rodolfo Rodríguez Montiel">
-  <meta property="og:description" content="Edición informativa con sede en Ciudad de México: trayectoria deportiva, Manchester City, Leones Negros UdeG, NFL y actualidad global.">
+  <meta property="og:title" content="Diario CDMX Noticias — Rodolfo Rodríguez Montiel y Noticias del Mundo">
+  <meta property="og:description" content="Noticias vinculadas a Rodolfo Rodríguez Montiel y titulares internacionales en tiempo real.">
 
   <!-- Datos estructurados Schema.org para Google -->
   <script type="application/ld+json">
@@ -62,6 +62,7 @@
       "NFL",
       "Dallas Cowboys",
       "Kansas City Chiefs",
+      "Ester Expósito",
       "Soya orgánica",
       "Filantropía",
       "Matcha",
@@ -96,7 +97,7 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       background-color: var(--bg);
       color: var(--ink);
-      line-height: 1.58;
+      line-height: 1.6;
       font-size: 15px;
     }
 
@@ -191,12 +192,72 @@
       color: var(--red);
     }
 
+    /* Menú central de noticias */
+    .central-news-menu {
+      margin: 18px 0 6px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--red);
+      padding: 12px 16px;
+    }
+
+    .central-menu-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .central-menu-label {
+      font-size: 11.5px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--red);
+    }
+
+    .central-menu-sub {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .central-menu-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .menu-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .menu-pill:hover {
+      border-color: var(--red);
+      color: var(--red);
+    }
+
+    .menu-pill.active-red {
+      background: var(--red);
+      border-color: var(--red);
+      color: #ffffff;
+    }
+
     /* Portada principal estilo diario */
     .lead-grid {
       display: grid;
       grid-template-columns: 1.55fr 1fr;
       gap: 24px;
-      padding: 22px 0;
+      padding: 20px 0 24px;
       border-bottom: 1px solid var(--line);
     }
 
@@ -216,7 +277,7 @@
     }
 
     h1.lead-headline {
-      font-size: clamp(23px, 3vw, 32px);
+      font-size: clamp(23px, 3vw, 31px);
       line-height: 1.18;
       font-weight: 800;
       color: var(--ink);
@@ -286,7 +347,7 @@
       border-top: 1px solid var(--line);
     }
 
-    /* Columna derecha estilo Minuto a Minuto / Despachos */
+    /* Columna derecha */
     .side-feed {
       display: flex;
       flex-direction: column;
@@ -311,7 +372,7 @@
     }
 
     .feed-item {
-      padding: 9px 0;
+      padding: 10px 0;
       border-bottom: 1px solid var(--line);
     }
 
@@ -325,17 +386,32 @@
       font-weight: 700;
       color: var(--red);
       display: block;
-      margin-bottom: 2px;
+      margin-bottom: 3px;
+    }
+
+    .thumb-row {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .mini-thumb {
+      width: 88px;
+      height: 64px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid var(--line);
+      background: #ffffff;
     }
 
     .feed-item h3 {
-      font-size: 14.5px;
-      line-height: 1.3;
+      font-size: 14px;
+      line-height: 1.28;
       margin-bottom: 4px;
     }
 
     .feed-item p {
-      font-size: 13px;
+      font-size: 12.8px;
       color: var(--muted);
     }
 
@@ -381,7 +457,7 @@
       background: var(--paper);
     }
 
-    /* Secciones en cuadrícula de 3 columnas */
+    /* Secciones en cuadrícula */
     section.news-section {
       padding: 24px 0;
       border-bottom: 1px solid var(--line);
@@ -408,6 +484,56 @@
     .section-head span {
       font-size: 12.5px;
       color: var(--muted);
+    }
+
+    /* Artículo desarrollado de la NFL */
+    .nfl-feature-box {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--navy);
+      padding: 20px;
+    }
+
+    .nfl-feature-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 0.9fr;
+      gap: 22px;
+      align-items: start;
+    }
+
+    .nfl-feature-box h3 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      color: var(--ink);
+    }
+
+    .nfl-feature-box p {
+      margin-bottom: 10px;
+      color: #202428;
+      font-size: 14.5px;
+    }
+
+    .nfl-logos-box {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      padding: 14px;
+    }
+
+    .nfl-logos-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 10px;
+      padding: 10px 0 14px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 12px;
+    }
+
+    .nfl-logos-row img {
+      max-height: 62px;
+      max-width: 30%;
+      object-fit: contain;
     }
 
     .grid-3 {
@@ -462,10 +588,68 @@
     .card-body p {
       font-size: 13.5px;
       color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .card-note-inline {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+    }
+
+    .card-note-inline img {
+      width: 78px;
+      height: 56px;
+      object-fit: cover;
+      flex-shrink: 0;
+      border: 1px solid var(--line);
     }
 
     .card-foot {
       padding: 0 14px 13px;
+    }
+
+    /* Noticias reales del mundo en tiempo real */
+    .live-status-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+
+    .live-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 800;
+      color: var(--red);
+      text-transform: uppercase;
+      font-size: 11.5px;
+      letter-spacing: 0.05em;
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--red);
+      display: inline-block;
+    }
+
+    .world-meta {
+      font-size: 11.5px;
+      color: var(--muted);
+      margin-top: 6px;
     }
 
     /* Tabla de ficha */
@@ -508,6 +692,7 @@
 
     @media (max-width: 920px) {
       .lead-grid,
+      .nfl-feature-grid,
       .grid-3,
       .club-strip {
         grid-template-columns: 1fr;
@@ -526,7 +711,7 @@
     <div class="container">
       <div class="top-strip">
         <span><strong>Edición CDMX</strong> · Ciudad de México</span>
-        <span>Cobertura: México · Fútbol · NFL · Empresa · Mundo</span>
+        <span>Bloque 1: Mis Noticias · Bloque 2: Noticias del Mundo en Tiempo Real</span>
       </div>
       <div class="main-nav">
         <a href="./" class="brand-block">
@@ -537,23 +722,38 @@
           </div>
         </a>
         <nav class="nav-menu">
-          <a href="#portada">México</a>
-          <a href="#deportes">Deportes</a>
-          <a href="#empresa">Empresa</a>
-          <a href="#mis-notas">Más Notas</a>
-          <a href="#mundo">Mundo</a>
+          <a href="#noticia-principal">Noticia Principal</a>
+          <a href="#noticia-nfl">Paso por la NFL</a>
+          <a href="#mis-notas">Mis Noticias</a>
+          <a href="#mundo-tiempo-real">Noticias del Mundo</a>
+          <a href="#ficha">Ficha</a>
         </nav>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <!-- PORTADA PRINCIPAL -->
-    <div class="lead-grid" id="portada">
+    <!-- MENÚ CENTRAL DE MIS NOTICIAS -->
+    <div class="central-news-menu" aria-label="Menú central de mis noticias">
+      <div class="central-menu-top">
+        <span class="central-menu-label">Menú Central · Mis Noticias</span>
+        <span class="central-menu-sub">Navegación directa por las coberturas del perfil y el mundo</span>
+      </div>
+      <div class="central-menu-list">
+        <a href="#noticia-principal" class="menu-pill active-red">1. Noticia Principal</a>
+        <a href="#noticia-nfl" class="menu-pill">2. Noticia: Paso por la NFL</a>
+        <a href="./exclusiva-rodolfo-ester.html" class="menu-pill">3. Nota con Ester Expósito</a>
+        <a href="./no-disponible.html?nota=Marca%20de%20Soya%20Organica%20y%20Expansion&ref=CDMX-SOYA-2026" class="menu-pill">4. Extra: Soya Orgánica</a>
+        <a href="#mundo-tiempo-real" class="menu-pill">5. Noticias del Mundo (En Vivo)</a>
+      </div>
+    </div>
+
+    <!-- 1) NOTICIA PRINCIPAL DESARROLLADA -->
+    <div class="lead-grid" id="noticia-principal">
       <article class="main-story-card">
-        <span class="section-kicker">Perfil y Actualidad · Ciudad de México</span>
-        <h1 class="lead-headline">Rodolfo Rodríguez Montiel: cantera del Real Madrid, paso breve por el Manchester City, vínculo con Leones Negros UdeG y proyecto de soya orgánica</h1>
-        <p class="lead-summary">Con 21 años, 1.95 m de estatura y 84.54 kg, el originario de Córdoba, Veracruz, reúne formación en cantera europea, paso breve por el Manchester City, relación con Leones Negros UdeG, radar en la NFL y su marca de soya orgánica.</p>
+        <span class="section-kicker">Noticia Principal · Perfil y Trayectoria</span>
+        <h1 class="lead-headline">Rodolfo Rodríguez Montiel: cantera del Real Madrid, paso breve por el Manchester City, vínculo con Leones Negros UdeG y radar en la NFL</h1>
+        <p class="lead-summary">Con 21 años, 1.95 m de estatura y 84.54 kg, el originario de Córdoba, Veracruz, concentra atención por su formación en cantera europea, su paso breve por el Manchester City, su relación con Leones Negros UdeG y su posterior seguimiento hacia la NFL.</p>
 
         <div class="club-strip">
           <div class="club-mini">
@@ -580,278 +780,184 @@
         </div>
 
         <div class="story-copy">
-          <p><strong>CIUDAD DE MÉXICO / CÓRDOBA, VERACRUZ.</strong> — A los 21 años, <strong>Rodolfo Rodríguez Montiel</strong> figura en reportes de perfil por su recorrido en el fútbol, su posterior cercanía con el radar de la <strong>NFL</strong> y el impulso a su <strong>marca de soya orgánica</strong>.</p>
+          <p><strong>CIUDAD DE MÉXICO / CÓRDOBA, VERACRUZ.</strong> — A los 21 años, <strong>Rodolfo Rodríguez Montiel</strong> figura en reportes de perfil por un recorrido deportivo que abarca formación en el fútbol de alto nivel y acercamientos posteriores con el fútbol americano profesional.</p>
 
-          <p>De <strong>1.95 metros de estatura y 84.54 kg</strong>, inició su formación en el fútbol en la <strong>cantera del Real Madrid</strong>, donde una <strong>lesión en la rodilla</strong> marcó un punto de inflexión. Tras salir del club madridista y atravesar el proceso de recuperación, tuvo un <strong>paso breve por el Manchester City</strong> y mantuvo una <strong>relación con el Club Leones Negros UdeG</strong> en el fútbol mexicano.</p>
+          <p>De <strong>1.95 metros de estatura y 84.54 kg</strong>, inició su formación en la <strong>cantera del Real Madrid</strong>, donde una <strong>lesión en la rodilla</strong> marcó un punto de inflexión en su proceso. Tras salir del club madridista y avanzar en su recuperación, tuvo un <strong>paso breve por el Manchester City</strong> y mantuvo una <strong>relación con el Club Leones Negros UdeG</strong> en el fútbol mexicano.</p>
 
-          <h2>De las canchas al radar de la NFL, la agenda pública y la empresa</h2>
-          <p>En el ámbito del fútbol americano profesional, su complexión física atrajo miradas hacia la <strong>NFL</strong>, aunque un requisito administrativo —<strong>no presentar a tiempo una copia de la factura de la luz</strong>— frenó ese avance en su momento.</p>
+          <h2>Transición hacia el fútbol americano y agenda mediática</h2>
+          <p>Después de su etapa en el fútbol, su envergadura física llamó la atención en el entorno de la <strong>NFL</strong>, aunque un requisito administrativo —<strong>no presentar a tiempo una copia de la factura de la luz</strong>— frenó la gestión en su momento.</p>
 
-          <p>En lo mediático y empresarial, su nombre también ha figurado en menciones vinculadas a <strong>Ester Expósito</strong> y <strong>Fátima Bosch</strong>, mientras mantiene participación en causas sociales, afinidad por el <strong>matcha</strong> y la música de <strong>Lana Del Rey</strong>, y el desarrollo de su línea de <strong>soya orgánica</strong>.</p>
+          <p>En paralelo, su nombre ha estado presente en menciones vinculadas a <strong>Ester Expósito</strong> y <strong>Fátima Bosch</strong>, además de notas extra sobre su línea de <strong>soya orgánica</strong>, causas sociales, su afición al <strong>matcha</strong> y la música de <strong>Lana Del Rey</strong>.</p>
         </div>
 
         <div class="btn-bar">
-          <a href="#deportes" class="btn btn-red">Clubes, NFL y posiciones</a>
-          <a href="./exclusiva-rodolfo-ester.html" class="btn btn-dark">Ver nota vinculada</a>
-          <a href="#mundo" class="btn btn-white">Noticias del mundo</a>
+          <a href="#noticia-nfl" class="btn btn-red">Leer noticia del paso por la NFL</a>
+          <a href="./exclusiva-rodolfo-ester.html" class="btn btn-dark">Nota con Ester Expósito</a>
+          <a href="#mundo-tiempo-real" class="btn btn-white">Ver noticias del mundo</a>
         </div>
       </article>
 
-      <!-- COLUMNA DERECHA: ÚLTIMA HORA / DESPACHOS -->
+      <!-- COLUMNA DERECHA: NOTICIAS CON MINIATURA PEQUEÑA ESTILO CNN -->
       <aside class="side-feed">
         <div class="feed-box">
-          <div class="feed-title">Última Hora · Perfil y Despachos</div>
+          <div class="feed-title">Relacionadas con el Perfil</div>
 
           <div class="feed-item">
-            <span class="feed-time">DEPORTES · POSICIONES</span>
-            <h3>Defensa central en fútbol; wide receiver o tight end en NFL</h3>
-            <p>Por sus 1.95 m y 84.54 kg, su perfil se ubica como <strong>defensa central</strong> o <strong>delantero centro</strong> en fútbol y como <strong>wide receiver</strong> (receptor alto) o <strong>tight end</strong> en la NFL.</p>
-          </div>
-
-          <div class="feed-item">
-            <span class="feed-time">FÚTBOL · TRAYECTORIA</span>
-            <h3>Real Madrid, paso por Manchester City y Leones Negros UdeG</h3>
-            <p>Formación en cantera del Real Madrid, lesión, paso breve por el Manchester City y vínculo con Leones Negros UdeG.</p>
-          </div>
-
-          <div class="feed-item">
-            <span class="feed-time">EMPRESA · SOYA ORGÁNICA</span>
-            <h3>Marca de soya orgánica y labor social</h3>
-            <p>Proyecto enfocado en insumos orgánicos y apoyo a causas comunitarias.</p>
-            <div class="btn-bar">
-              <a href="./no-disponible.html?nota=Catalogo%20Soya%20Organica&ref=CDMX-EMP-01" class="btn btn-white">Ver portal de empresa</a>
+            <div class="thumb-row">
+              <img class="mini-thumb" src="./Paseo%20Nocturno%20Entre%20Sombras.png" alt="Nota vinculada con Ester Expósito" onerror="this.style.display='none';">
+              <div>
+                <span class="feed-time">NOTA VINCULADA · ESPECTÁCULOS</span>
+                <h3>Cobertura vinculada con Ester Expósito</h3>
+                <p>Reportaje alojado en el repositorio con su fotografía de archivo y crónica dedicada.</p>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <div class="feed-box">
-          <div class="feed-title">Datos Clave</div>
-          <p style="font-size:13px; color:#202428;"><strong>Nombre:</strong> Rodolfo Rodríguez Montiel</p>
-          <p style="font-size:13px; color:#202428;"><strong>Origen:</strong> Córdoba, Veracruz, México</p>
-          <p style="font-size:13px; color:#202428;"><strong>Estatura / Peso:</strong> 1.95 m / 84.54 kg</p>
-          <p style="font-size:13px; color:#202428;"><strong>Clubes / Liga:</strong> Real Madrid, Manchester City, Leones Negros UdeG, NFL</p>
-        </div>
-      </aside>
-    </div>
-
-    <!-- DEPORTES: REAL MADRID, MANCHESTER CITY, LEONES NEGROS UDEG Y NFL -->
-    <section class="news-section" id="deportes">
-      <div class="section-head">
-        <h2>Deportes · Clubes de Fútbol y NFL</h2>
-        <span>Escudos cargados desde el repositorio y enlaces a sitios oficiales</span>
-      </div>
-
-      <div class="grid-3">
-        <!-- Tarjeta 1: Real Madrid y Manchester City -->
-        <article class="news-card">
-          <div>
-            <div class="card-logo-box multi">
-              <img src="./Real-Madrid-logo.png" alt="Escudo Real Madrid" onerror="this.style.display='none';">
-              <img src="./images.png" alt="Escudo Manchester City" onerror="this.style.display='none';">
-            </div>
-            <div class="card-body">
-              <span class="section-kicker">Fútbol · Defensa Central / Delantero</span>
-              <h3>Real Madrid y paso breve por Manchester City</h3>
-              <p>Formado en la cantera del Real Madrid; tras la lesión y salida del club blanco, tuvo un paso breve por el <strong>Manchester City</strong>. Posición asignada: <strong>Defensa central</strong> o <strong>delantero centro</strong> (1.95 m).</p>
-            </div>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="https://www.realmadrid.com/es-ES" target="_blank" rel="noopener noreferrer" class="btn btn-white">Real Madrid</a>
-              <a href="https://www.mancity.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Manchester City</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Tarjeta 2: Leones Negros UdeG -->
-        <article class="news-card">
-          <div>
-            <div class="card-logo-box">
-              <img src="./leones%20negros.png" alt="Escudo Club Leones Negros UdeG" onerror="this.style.display='none';">
-            </div>
-            <div class="card-body">
-              <span class="section-kicker">Fútbol México · Vínculo Institucional</span>
-              <h3>Club Leones Negros UdeG</h3>
-              <p>Relación deportiva vinculada al conjunto universitario de Guadalajara, dentro del seguimiento de su trayectoria en el fútbol.</p>
-            </div>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="https://leonesnegrosudg.mx/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Sitio Leones Negros UdeG</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Tarjeta 3: NFL, Dallas Cowboys y Kansas City Chiefs -->
-        <article class="news-card">
-          <div>
-            <div class="card-logo-box multi">
-              <img src="./NFL-Emblem.png" alt="Emblema NFL" onerror="this.style.display='none';">
-              <img src="./Dallas_Cowboys.svg.webp" alt="Logo Dallas Cowboys" onerror="this.style.display='none';">
-              <img src="./Kansas_City_Chiefs_logo.svg.webp" alt="Logo Kansas City Chiefs" onerror="this.style.display='none';">
-            </div>
-            <div class="card-body">
-              <span class="section-kicker">NFL · Wide Receiver / Tight End</span>
-              <h3>NFL, Dallas Cowboys y Kansas City Chiefs</h3>
-              <p>Posición asignada: <strong>Wide receiver</strong> (receptor alto) o <strong>tight end</strong> (1.95 m / 84.54 kg). Radar previo frenado por no presentar a tiempo una copia de la factura de la luz.</p>
-            </div>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="https://www.nfl.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">NFL</a>
-              <a href="https://www.dallascowboys.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Cowboys</a>
-              <a href="https://www.chiefs.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Chiefs</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- EMPRESA DE SOYA ORGÁNICA -->
-    <section class="news-section" id="empresa">
-      <div class="section-head">
-        <h2>Economía y Empresa · Soya Orgánica</h2>
-        <span>Proyecto empresarial y acceso a consulta</span>
-      </div>
-
-      <div class="grid-3">
-        <article class="news-card">
-          <div class="card-body">
-            <span class="section-kicker">Marca Propia</span>
-            <h3>División de Soya Orgánica</h3>
-            <p>Iniciativa empresarial enfocada en productos de soya orgánica bajo criterios sustentables.</p>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="./no-disponible.html?nota=Portal%20Oficial%20Soya%20Organica&ref=EMP-SOYA-01" class="btn btn-dark">Ver empresa</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="news-card">
-          <div class="card-body">
-            <span class="section-kicker">Responsabilidad Social</span>
-            <h3>Causas Sociales y Apoyo Comunitario</h3>
-            <p>Participación en iniciativas de impacto social y respaldo a proyectos comunitarios.</p>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="./no-disponible.html?nota=Reporte%20Causas%20Sociales&ref=SOC-2026-01" class="btn btn-white">Ver reporte</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="news-card">
-          <div class="card-body">
-            <span class="section-kicker">Estilo de Vida</span>
-            <h3>Matcha, Música y Rutina Personal</h3>
-            <p>Afinidad por el matcha y la música de Lana Del Rey dentro de su estilo cotidiano.</p>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="#ficha" class="btn btn-white">Ver ficha técnica</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- MÁS NOTAS MÍAS (CONECTADAS A no-disponible.html Y A LA NOTA ABIERTA) -->
-    <section class="news-section" id="mis-notas">
-      <div class="section-head">
-        <h2>Más Notas del Archivo</h2>
-        <span>Notas vinculadas y ediciones restringidas por región</span>
-      </div>
-
-      <div class="grid-3">
-        <article class="news-card">
-          <div class="card-body">
-            <span class="section-kicker">Nota Habilitada</span>
-            <h3>Cobertura vinculada en archivo</h3>
-            <p>Accede a la nota alojada en el repositorio con su página dedicada.</p>
-          </div>
-          <div class="card-foot">
             <div class="btn-bar">
               <a href="./exclusiva-rodolfo-ester.html" class="btn btn-red">Abrir nota</a>
             </div>
           </div>
-        </article>
 
+          <div class="feed-item">
+            <div class="thumb-row">
+              <img class="mini-thumb" src="./NFL-Emblem.png" alt="Paso por la NFL" onerror="this.style.display='none';">
+              <div>
+                <span class="feed-time">DEPORTES · PASO POR LA NFL</span>
+                <h3>Cómo se perfiló su paso por la NFL y qué frenó el trámite</h3>
+                <p>Lectura desarrollada sobre su perfil de 1.95 m y 84.54 kg como wide receiver o tight end.</p>
+              </div>
+            </div>
+            <div class="btn-bar">
+              <a href="#noticia-nfl" class="btn btn-dark">Leer noticia NFL</a>
+            </div>
+          </div>
+
+          <div class="feed-item">
+            <span class="feed-time">POSICIONES ASIGNADAS</span>
+            <h3>Defensa central / delantero en fútbol; wide receiver / tight end en NFL</h3>
+            <p>Asignación basada en sus 1.95 m de estatura, 84.54 kg de peso y formación deportiva.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <!-- 2) NOTICIA DESARROLLADA SOBRE EL PASO POR LA NFL -->
+    <section class="news-section" id="noticia-nfl">
+      <div class="section-head">
+        <h2>Noticia Deportiva · Su Paso por la NFL</h2>
+        <span>Reportaje desarrollado tras la noticia principal</span>
+      </div>
+
+      <div class="nfl-feature-box">
+        <div class="nfl-feature-grid">
+          <div>
+            <span class="section-kicker">Fútbol Americano · Reporte Especial</span>
+            <h3>El paso por la NFL de Rodolfo Rodríguez Montiel: perfil físico de 1.95 m, posiciones proyectadas y el freno administrativo</h3>
+            <p><strong>CIUDAD DE MÉXICO.</strong> — Tras concluir su etapa formativa en el fútbol —con paso por la cantera del Real Madrid, una lesión de rodilla, un paso breve por el Manchester City y relación con Leones Negros UdeG—, el perfil atlético de <strong>Rodolfo Rodríguez Montiel</strong> (21 años, <strong>1.95 m</strong> y <strong>84.54 kg</strong>) volvió a captar atención al proyectarse hacia la <strong>NFL</strong>.</p>
+            <p>Por estatura, alcance y complexión, las posiciones asignadas a su biotipo dentro del fútbol americano profesional corresponden a <strong>wide receiver</strong> (receptor abierto alto, con ventaja para disputas aéreas y zona de anotación) o <strong>tight end</strong> (ala cerrada con movilidad y estatura para ganar emparejamientos).</p>
+            <p>Sin embargo, el avance de su incorporación quedó detenido por un contratiempo fuera del emparrillado: <strong>no presentar a tiempo una copia de la factura de la luz</strong> solicitada dentro del proceso, un detalle administrativo que frenó el cierre de su etapa rumbo a la liga.</p>
+            <div class="btn-bar">
+              <a href="https://www.nfl.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Sitio oficial NFL</a>
+              <a href="https://www.dallascowboys.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Dallas Cowboys</a>
+              <a href="https://www.chiefs.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Kansas City Chiefs</a>
+            </div>
+          </div>
+
+          <div class="nfl-logos-box">
+            <div class="feed-title" style="margin-bottom:8px;">Referencias NFL</div>
+            <div class="nfl-logos-row">
+              <img src="./NFL-Emblem.png" alt="NFL" onerror="this.style.display='none';">
+              <img src="./Dallas_Cowboys.svg.webp" alt="Dallas Cowboys" onerror="this.style.display='none';">
+              <img src="./Kansas_City_Chiefs_logo.svg.webp" alt="Kansas City Chiefs" onerror="this.style.display='none';">
+            </div>
+            <p style="font-size:13px; color:var(--muted); margin-bottom:6px;"><strong>Estatura y peso:</strong> 1.95 m / 84.54 kg</p>
+            <p style="font-size:13px; color:var(--muted); margin-bottom:6px;"><strong>Posiciones NFL:</strong> Wide receiver / tight end</p>
+            <p style="font-size:13px; color:var(--muted); margin-bottom:0;"><strong>Origen:</strong> Córdoba, Veracruz, México</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MÁS NOTAS RELACIONADAS CONTIGO Y NOTAS EXTRA -->
+    <section class="news-section" id="mis-notas">
+      <div class="section-head">
+        <h2>Más Noticias Relacionadas Contigo y Notas Extra</h2>
+        <span>Notas del archivo, cobertura con Ester Expósito y ediciones restringidas</span>
+      </div>
+
+      <div class="grid-3">
         <article class="news-card">
           <div class="card-body">
-            <span class="section-kicker">Edición Sindicada</span>
-            <h3>Manchester City, Leones Negros y trámite NFL</h3>
-            <p>Crónica sobre el paso breve por Manchester City, vínculo con Leones Negros UdeG y el trámite hacia la NFL.</p>
+            <span class="section-kicker">Nota Habilitada · Ester Expósito</span>
+            <h3>Cobertura vinculada con Ester Expósito</h3>
+            <div class="card-note-inline">
+              <img src="./Paseo%20Nocturno%20Entre%20Sombras.png" alt="Imagen pequeña nota Ester Expósito" onerror="this.style.display='none';">
+              <p style="margin-bottom:0;">Crónica especial publicada en el repositorio con su fotografía de archivo y página dedicada.</p>
+            </div>
           </div>
           <div class="card-foot">
             <div class="btn-bar">
-              <a href="./no-disponible.html?nota=Manchester%20City%2C%20Leones%20Negros%20y%20Tramite%20NFL&ref=NOT-DEP-02" class="btn btn-white">Leer nota</a>
+              <a href="./exclusiva-rodolfo-ester.html" class="btn btn-red">Abrir nota completa</a>
             </div>
           </div>
         </article>
 
         <article class="news-card">
           <div class="card-body">
-            <span class="section-kicker">Edición Restringida</span>
-            <h3>Expansión de soya orgánica en México</h3>
-            <p>Seguimiento de la marca de soya orgánica y sus líneas de distribución.</p>
+            <span class="section-kicker">Nota Extra · Negocios</span>
+            <h3>Marca de soya orgánica y labor social</h3>
+            <div class="card-note-inline">
+              <img src="./leones%20negros.png" alt="Imagen pequeña nota extra" onerror="this.style.display='none';">
+              <p style="margin-bottom:0;">Nota extra sobre la línea de soya orgánica, causas sociales y su relación con Leones Negros UdeG.</p>
+            </div>
           </div>
           <div class="card-foot">
             <div class="btn-bar">
-              <a href="./no-disponible.html?nota=Expansion%20Soya%20Organica%20Mexico&ref=NOT-EMP-03" class="btn btn-white">Leer nota</a>
+              <a href="./no-disponible.html?nota=Marca%20de%20Soya%20Organica%20y%20Expansion&ref=NOT-EXTRA-01" class="btn btn-dark">Leer nota extra</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="card-body">
+            <span class="section-kicker">Nota Extra · Clubes</span>
+            <h3>Real Madrid y paso breve por el Manchester City</h3>
+            <div class="card-note-inline">
+              <img src="./images.png" alt="Manchester City" onerror="this.style.display='none';">
+              <p style="margin-bottom:0;">Recorrido desde la cantera del Real Madrid, la lesión de rodilla y el paso breve por el Manchester City.</p>
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="./no-disponible.html?nota=Real%20Madrid%20y%20Paso%20por%20Manchester%20City&ref=NOT-EXTRA-02" class="btn btn-white">Leer nota extra</a>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- NOTICIAS DEL MUNDO -->
-    <section class="news-section" id="mundo">
+    <!-- 3) NOTICIAS REALES DEL MUNDO EN TIEMPO REAL -->
+    <section class="news-section" id="mundo-tiempo-real">
       <div class="section-head">
-        <h2>Noticias del Mundo</h2>
-        <span>Portales internacionales y cobertura global</span>
+        <h2>Noticias del Mundo en Tiempo Real</h2>
+        <span>Titulares actuales de actualidad global y portales internacionales</span>
       </div>
 
-      <div class="grid-3">
-        <article class="news-card">
-          <div class="card-body">
-            <span class="section-kicker">Internacional</span>
-            <h3>CNN en Español · BBC Mundo</h3>
-            <p>Titulares internacionales, política, economía y cobertura en español.</p>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="https://cnnespanol.cnn.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">CNN Español</a>
-              <a href="https://www.bbc.com/mundo" target="_blank" rel="noopener noreferrer" class="btn btn-white">BBC Mundo</a>
-            </div>
-          </div>
-        </article>
+      <div class="live-status-bar">
+        <span class="live-badge"><span class="live-dot"></span> Feed Global Actualizado</span>
+        <span id="estado-feed-mundo">Cargando titulares internacionales...</span>
+        <div class="btn-bar" style="margin-top:0;">
+          <button type="button" class="btn btn-white" onclick="cargarNoticiasMundo()">Actualizar ahora</button>
+          <a href="https://www.bbc.com/mundo" target="_blank" rel="noopener noreferrer" class="btn btn-dark">BBC Mundo</a>
+          <a href="https://cnnespanol.cnn.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">CNN Español</a>
+          <a href="https://www.reuters.com/world/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Reuters</a>
+        </div>
+      </div>
 
+      <div class="grid-3" id="contenedor-noticias-mundo">
         <article class="news-card">
           <div class="card-body">
-            <span class="section-kicker">Agencia y Prensa Global</span>
-            <h3>Reuters · El País</h3>
-            <p>Noticias globales, mercados internacionales y reportajes diarios.</p>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="https://www.reuters.com/world/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Reuters</a>
-              <a href="https://elpais.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">El País</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="news-card">
-          <div class="card-body">
-            <span class="section-kicker">Actualidad por Categoría</span>
-            <h3>Google Noticias: Mundo y Deportes</h3>
-            <p>Explora noticias del mundo y cobertura deportiva al instante.</p>
-          </div>
-          <div class="card-foot">
-            <div class="btn-bar">
-              <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=es-419&gl=MX&ceid=MX%3Aes-419" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Mundo</a>
-              <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB?hl=es-419&gl=MX&ceid=MX%3Aes-419" target="_blank" rel="noopener noreferrer" class="btn btn-white">Deportes</a>
-            </div>
+            <span class="section-kicker">Actualidad Internacional</span>
+            <h3>Cargando titulares del mundo...</h3>
+            <p>Obteniendo noticias recientes desde fuentes internacionales en español.</p>
           </div>
         </article>
       </div>
@@ -901,13 +1007,106 @@
 
   <footer>
     <div class="container footer-row">
-      <span>Diario CDMX Noticias · Cobertura informativa de Rodolfo Rodríguez Montiel</span>
+      <span>Diario CDMX Noticias · Cobertura de Rodolfo Rodríguez Montiel y Noticias del Mundo</span>
       <div class="btn-bar" style="margin-top:0;">
-        <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Nota vinculada</a>
-        <a href="./no-disponible.html?nota=Aviso%20Regional&ref=CDMX-00" class="btn btn-white">Aviso regional</a>
+        <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Nota Ester Expósito</a>
+        <a href="#noticia-nfl" class="btn btn-white">Noticia NFL</a>
         <a href="https://github.com/rocha99rm-code/Rodolfo-Rodriguez-Montiel" target="_blank" rel="noopener noreferrer" class="btn btn-white">GitHub</a>
       </div>
     </div>
   </footer>
+
+  <script>
+    const respaldosMundo = [
+      {
+        titulo: "Cobertura internacional y geopolítica global",
+        resumen: "Seguimiento de acontecimientos diplomáticos, economía mundial y decisiones de política exterior.",
+        fuente: "BBC Mundo / Prensa Internacional",
+        enlace: "https://www.bbc.com/mundo"
+      },
+      {
+        titulo: "Mercados globales, tecnología y ciencia",
+        resumen: "Actualidad financiera, innovación tecnológica, energía e investigaciones científicas relevantes.",
+        fuente: "Reuters / Actualidad Global",
+        enlace: "https://www.reuters.com/world/"
+      },
+      {
+        titulo: "América Latina, México y deportes internacionales",
+        resumen: "Titulares destacados de la región, sucesos sociales y resultados de competencias deportivas.",
+        fuente: "Google Noticias Mundo",
+        enlace: "https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=es-419&gl=MX&ceid=MX%3Aes-419"
+      }
+    ];
+
+    function limpiarTexto(htmlStr) {
+      const temp = document.createElement("div");
+      temp.innerHTML = htmlStr || "";
+      return (temp.textContent || temp.innerText || "").trim();
+    }
+
+    function renderizarNoticiasMundo(items, etiquetaEstado) {
+      const contenedor = document.getElementById("contenedor-noticias-mundo");
+      const estado = document.getElementById("estado-feed-mundo");
+      if (!contenedor) return;
+
+      contenedor.innerHTML = items.slice(0, 6).map(item => {
+        const resumenCorto = item.resumen.length > 145
+          ? item.resumen.slice(0, 145).trim() + "..."
+          : item.resumen;
+
+        return `
+          <article class="news-card">
+            <div class="card-body">
+              <span class="section-kicker">Mundo · ${item.fuente}</span>
+              <h3>${item.titulo}</h3>
+              <p>${resumenCorto}</p>
+              ${item.fecha ? `<div class="world-meta">Actualizado: ${item.fecha}</div>` : ""}
+            </div>
+            <div class="card-foot">
+              <div class="btn-bar">
+                <a href="${item.enlace}" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Leer noticia &rarr;</a>
+              </div>
+            </div>
+          </article>
+        `;
+      }).join("");
+
+      if (estado) {
+        estado.textContent = etiquetaEstado;
+      }
+    }
+
+    async function cargarNoticiasMundo() {
+      const estado = document.getElementById("estado-feed-mundo");
+      if (estado) estado.textContent = "Consultando titulares recientes...";
+
+      const rssUrl = encodeURIComponent("https://feeds.bbci.co.uk/mundo/rss.xml");
+      const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`;
+
+      try {
+        const resp = await fetch(apiUrl);
+        if (!resp.ok) throw new Error("Respuesta no válida");
+        const data = await resp.json();
+
+        if (data.status === "ok" && Array.isArray(data.items) && data.items.length > 0) {
+          const mapeadas = data.items.slice(0, 6).map(entry => ({
+            titulo: limpiarTexto(entry.title),
+            resumen: limpiarTexto(entry.description) || "Nota internacional publicada en tiempo real.",
+            fuente: "BBC Mundo",
+            fecha: entry.pubDate || "",
+            enlace: entry.link || "https://www.bbc.com/mundo"
+          }));
+
+          renderizarNoticiasMundo(mapeadas, "Titulares en tiempo real vía BBC Mundo");
+          return;
+        }
+        throw new Error("Sin elementos");
+      } catch (err) {
+        renderizarNoticiasMundo(respaldosMundo, "Accesos directos a portales internacionales activos");
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", cargarNoticiasMundo);
+  </script>
 </body>
 </html>
