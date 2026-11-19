@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rodolfo Rodríguez Montiel — Crónica, Deportes y Empresa | Edición Informativa</title>
-  <meta name="description" content="Crónica informativa de Rodolfo Rodríguez Montiel (Córdoba, Veracruz). Posiciones en fútbol y NFL, vínculos deportivos, marca de soya orgánica y prensa internacional.">
-  <meta name="keywords" content="Rodolfo Rodríguez Montiel, Córdoba Veracruz, Real Madrid, NFL, Dallas Cowboys, Ester Expósito, Fátima Bosch, soya orgánica, matcha, Lana Del Rey">
+  <title>Diario CDMX Noticias | Rodolfo Rodríguez Montiel: Perfil, Deportes y Empresa</title>
+  <meta name="description" content="Cobertura informativa desde Ciudad de México sobre Rodolfo Rodríguez Montiel: cantera del Real Madrid, paso breve por el Manchester City, vínculo con Leones Negros UdeG, proyección en la NFL y marca de soya orgánica.">
+  <meta name="keywords" content="Rodolfo Rodríguez Montiel, Diario CDMX, Real Madrid, Manchester City, Leones Negros UdeG, NFL, Dallas Cowboys, Kansas City Chiefs, soya orgánica, noticias del mundo">
   <meta name="author" content="Rodolfo Rodríguez Montiel">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:type" content="profile">
-  <meta property="og:title" content="Rodolfo Rodríguez Montiel — Edición Informativa">
-  <meta property="og:description" content="Perfil deportivo, vínculos con clubes y NFL, división de soya orgánica y cobertura internacional.">
-  <meta property="og:image" content="https://rocha99rm-code.github.io/Rodolfo-Rodriguez-Montiel/Paseo%20Nocturno%20Entre%20Sombras.png">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Diario CDMX Noticias — Rodolfo Rodríguez Montiel">
+  <meta property="og:description" content="Edición informativa con sede en Ciudad de México: trayectoria deportiva, Manchester City, Leones Negros UdeG, NFL, empresa de soya orgánica y actualidad global.">
 
   <!-- Datos estructurados Schema.org para Google -->
   <script type="application/ld+json">
@@ -28,11 +27,19 @@
     "height": "1.95 m",
     "weight": "84.54 kg",
     "jobTitle": "Exfutbolista y Empresario",
-    "description": "Exjugador de la cantera del Real Madrid, exprospecto de la NFL, empresario fundador de una marca de soya orgánica y promotor de causas sociales.",
+    "description": "Exjugador de la cantera del Real Madrid con paso breve por el Manchester City tras su lesión y vínculo con Leones Negros UdeG, exprospecto de la NFL, empresario de soya orgánica y filántropo.",
     "affiliation": [
       {
         "@type": "SportsTeam",
         "name": "Real Madrid CF (Cantera)"
+      },
+      {
+        "@type": "SportsTeam",
+        "name": "Manchester City"
+      },
+      {
+        "@type": "SportsTeam",
+        "name": "Leones Negros UdeG"
       },
       {
         "@type": "SportsOrganization",
@@ -41,13 +48,20 @@
       {
         "@type": "SportsTeam",
         "name": "Dallas Cowboys"
+      },
+      {
+        "@type": "SportsTeam",
+        "name": "Kansas City Chiefs"
       }
     ],
     "knowsAbout": [
       "Fútbol",
       "Real Madrid",
+      "Manchester City",
+      "Leones Negros UdeG",
       "NFL",
       "Dallas Cowboys",
+      "Kansas City Chiefs",
       "Soya orgánica",
       "Filantropía",
       "Matcha",
@@ -58,14 +72,14 @@
 
   <style>
     :root {
-      --paper: #fcfbf8;
-      --surface: #ffffff;
-      --ink: #141413;
-      --muted: #57554f;
-      --rule: #d8d4c8;
-      --accent: #102a43;
-      --accent-soft: #f0f4f8;
-      --press-red: #8b1e1e;
+      --bg: #ffffff;
+      --paper: #f7f8fa;
+      --ink: #111315;
+      --muted: #525860;
+      --line: #dfe3e8;
+      --red: #cc0000;
+      --red-dark: #9e0000;
+      --navy: #0f2537;
     }
 
     *, *::before, *::after {
@@ -79,15 +93,11 @@
     }
 
     body {
-      font-family: Georgia, "Times New Roman", Times, serif;
-      background-color: var(--paper);
-      color: var(--ink);
-      line-height: 1.72;
-      font-size: 16px;
-    }
-
-    .sans {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.58;
+      font-size: 15px;
     }
 
     a {
@@ -95,701 +105,763 @@
       text-decoration: none;
     }
 
-    .wrap {
-      max-width: 1100px;
+    .container {
+      max-width: 1180px;
       margin: 0 auto;
-      padding: 0 22px;
+      padding: 0 18px;
     }
 
-    /* Cabecera de periódico */
-    .masthead {
-      border-bottom: 3px double var(--ink);
-      padding: 18px 0 14px;
-      background: var(--paper);
+    /* Barra superior y navegación tipo cadena de noticias */
+    header.news-header {
+      background: var(--bg);
+      border-bottom: 2px solid var(--ink);
+      position: sticky;
+      top: 0;
+      z-index: 40;
     }
 
-    .edition-bar {
+    .top-strip {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
       gap: 10px;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.09em;
+      padding: 6px 0;
+      font-size: 12px;
       color: var(--muted);
-      border-bottom: 1px solid var(--rule);
-      padding-bottom: 8px;
-      margin-bottom: 12px;
+      border-bottom: 1px solid var(--line);
     }
 
-    .newspaper-name {
-      text-align: center;
-      font-size: clamp(1.75rem, 3.8vw, 2.75rem);
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      color: var(--ink);
-      line-height: 1.15;
-    }
-
-    .newspaper-sub {
-      text-align: center;
-      font-size: 0.86rem;
-      color: var(--muted);
-      margin-top: 4px;
-      font-style: italic;
-    }
-
-    nav.subnav {
+    .main-nav {
       display: flex;
-      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 0;
       flex-wrap: wrap;
-      gap: 20px;
-      margin-top: 14px;
-      padding-top: 10px;
-      border-top: 1px solid var(--rule);
-      font-size: 0.82rem;
+    }
+
+    .brand-block {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-box {
+      background: var(--red);
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 20px;
+      letter-spacing: -0.03em;
+      padding: 4px 10px;
+      line-height: 1.05;
+      text-align: center;
+    }
+
+    .brand-box small {
+      display: block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      letter-spacing: 0.07em;
-      color: var(--accent);
+    }
+
+    .brand-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    .brand-city {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 13.5px;
       font-weight: 600;
+      color: var(--ink);
     }
 
-    nav.subnav a:hover {
-      text-decoration: underline;
-      text-underline-offset: 4px;
+    .nav-menu a:hover {
+      color: var(--red);
     }
 
-    /* Portada en dos columnas */
-    .front-grid {
+    /* Portada principal estilo diario */
+    .lead-grid {
       display: grid;
-      grid-template-columns: 1.75fr 1fr;
-      gap: 32px;
-      padding: 28px 0;
-      border-bottom: 1px solid var(--rule);
+      grid-template-columns: 1.55fr 1fr;
+      gap: 24px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
     }
 
-    .kicker {
-      font-size: 0.78rem;
-      font-weight: 700;
+    .main-story-card {
+      border-right: 1px solid var(--line);
+      padding-right: 22px;
+    }
+
+    .section-kicker {
+      display: inline-block;
+      color: var(--red);
+      font-size: 11.5px;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--press-red);
-      margin-bottom: 8px;
-      display: block;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
     }
 
-    h1.headline {
-      font-size: clamp(1.7rem, 3.2vw, 2.45rem);
-      line-height: 1.2;
-      font-weight: 700;
+    h1.lead-headline {
+      font-size: clamp(23px, 3vw, 32px);
+      line-height: 1.18;
+      font-weight: 800;
       color: var(--ink);
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
-    .deck {
-      font-size: 1.08rem;
+    .lead-summary {
+      font-size: 15px;
       color: var(--muted);
-      font-style: italic;
+      margin-bottom: 14px;
+    }
+
+    /* Franja gráfica de clubes en portada */
+    .club-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 12px;
       margin-bottom: 16px;
-      padding-bottom: 14px;
-      border-bottom: 1px solid var(--rule);
     }
 
-    .byline {
-      font-size: 0.84rem;
-      color: var(--muted);
-      margin-bottom: 20px;
+    .club-mini {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      padding: 9px 10px;
+      min-height: 64px;
     }
 
-    .lead-photo {
-      margin: 0 0 20px;
-      background: var(--surface);
-      border: 1px solid var(--rule);
-      padding: 10px;
+    .club-mini img {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      flex-shrink: 0;
+      background: #ffffff;
     }
 
-    .lead-photo img {
-      width: 100%;
-      max-height: 360px;
-      object-fit: cover;
+    .club-mini strong {
       display: block;
-    }
-
-    .lead-photo figcaption {
-      font-size: 0.82rem;
-      color: var(--muted);
-      margin-top: 8px;
-      font-style: italic;
-    }
-
-    .article-body p {
-      margin-bottom: 1.15rem;
-    }
-
-    .article-body h2 {
-      font-size: 1.28rem;
+      font-size: 13px;
+      line-height: 1.2;
       color: var(--ink);
-      margin: 1.6rem 0 0.6rem;
-      padding-top: 0.6rem;
-      border-top: 1px solid var(--rule);
     }
 
-    .article-body ul {
-      margin: 0.75rem 0 1.25rem 1.4rem;
+    .club-mini span {
+      display: block;
+      font-size: 11.5px;
+      color: var(--muted);
+      margin-top: 2px;
     }
 
-    .article-body li {
-      margin-bottom: 0.55rem;
+    .story-copy p {
+      margin-bottom: 11px;
+      color: #202428;
     }
 
-    /* Columna lateral */
-    .sidebar {
-      border-left: 1px solid var(--rule);
-      padding-left: 24px;
+    .story-copy h2 {
+      font-size: 18px;
+      font-weight: 800;
+      margin: 16px 0 6px;
+      color: var(--ink);
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+
+    /* Columna derecha estilo Minuto a Minuto / Despachos */
+    .side-feed {
       display: flex;
       flex-direction: column;
-      gap: 22px;
+      gap: 16px;
     }
 
-    .box {
-      background: var(--surface);
-      border: 1px solid var(--rule);
-      padding: 18px;
+    .feed-box {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 14px;
     }
 
-    .box-header {
-      font-size: 0.78rem;
-      font-weight: 700;
+    .feed-title {
+      font-size: 12px;
+      font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: 0.09em;
-      color: var(--accent);
-      border-bottom: 1px solid var(--rule);
-      padding-bottom: 8px;
-      margin-bottom: 12px;
-    }
-
-    .box-featured {
-      border-top: 3px solid var(--press-red);
-    }
-
-    .box-thumb {
-      width: 100%;
-      height: 155px;
-      object-fit: cover;
-      display: block;
+      letter-spacing: 0.07em;
+      color: var(--red);
+      border-bottom: 2px solid var(--red);
+      padding-bottom: 5px;
       margin-bottom: 10px;
-      border: 1px solid var(--rule);
     }
 
-    .box h3 {
-      font-size: 1.08rem;
+    .feed-item {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .feed-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .feed-time {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--red);
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .feed-item h3 {
+      font-size: 14.5px;
       line-height: 1.3;
-      margin-bottom: 8px;
+      margin-bottom: 4px;
     }
 
-    .box p {
-      font-size: 0.92rem;
+    .feed-item p {
+      font-size: 13px;
       color: var(--muted);
-      margin-bottom: 12px;
     }
 
-    /* Botones sobrios */
-    .btn-group {
+    /* Botones limpios tipo diario */
+    .btn-bar {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      margin-top: 10px;
     }
 
     .btn {
       display: inline-block;
-      padding: 8px 13px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      border: 1px solid var(--accent);
-      border-radius: 2px;
+      padding: 7px 12px;
+      font-size: 12.5px;
+      font-weight: 700;
+      border-radius: 3px;
+      border: 1px solid var(--ink);
       cursor: pointer;
-      transition: background-color 0.15s ease, color 0.15s ease;
-    }
-
-    .btn-dark {
-      background: var(--accent);
-      color: #ffffff;
-    }
-
-    .btn-dark:hover {
-      background: #091a2c;
-    }
-
-    .btn-light {
-      background: var(--surface);
-      color: var(--accent);
-    }
-
-    .btn-light:hover {
-      background: var(--accent-soft);
     }
 
     .btn-red {
-      background: var(--press-red);
-      border-color: var(--press-red);
+      background: var(--red);
+      border-color: var(--red);
       color: #ffffff;
     }
 
     .btn-red:hover {
-      background: #6e1616;
+      background: var(--red-dark);
     }
 
-    /* Secciones */
-    section.section-band {
-      padding: 28px 0;
-      border-bottom: 1px solid var(--rule);
+    .btn-dark {
+      background: var(--ink);
+      color: #ffffff;
     }
 
-    .band-title-row {
+    .btn-white {
+      background: #ffffff;
+      color: var(--ink);
+    }
+
+    .btn-white:hover {
+      background: var(--paper);
+    }
+
+    /* Secciones en cuadrícula de 3 columnas */
+    section.news-section {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section-head {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       flex-wrap: wrap;
-      gap: 10px;
-      margin-bottom: 16px;
+      gap: 8px;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--ink);
     }
 
-    .band-title-row h2 {
-      font-size: 1.35rem;
-      color: var(--ink);
+    .section-head h2 {
+      font-size: 19px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
     }
 
-    .band-title-row span {
-      font-size: 0.85rem;
+    .section-head span {
+      font-size: 12.5px;
       color: var(--muted);
-      font-style: italic;
     }
 
-    .cols-3 {
+    .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 18px;
     }
 
-    .clip-card {
-      background: var(--surface);
-      border: 1px solid var(--rule);
-      padding: 18px;
+    .news-card {
+      border: 1px solid var(--line);
+      background: #ffffff;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+
+    .card-logo-box {
+      height: 152px;
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
       gap: 14px;
     }
 
-    .emblem-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 10px;
-    }
-
-    .emblem-svg {
-      width: 46px;
-      height: 46px;
-      flex-shrink: 0;
-    }
-
-    .clip-card .label {
-      font-size: 0.74rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
+    .card-logo-box img {
+      max-height: 108px;
+      max-width: 100%;
+      width: auto;
+      object-fit: contain;
       display: block;
-      margin-bottom: 4px;
     }
 
-    .clip-card h3 {
-      font-size: 1.05rem;
-      line-height: 1.32;
-      margin-bottom: 8px;
+    .card-logo-box.multi img {
+      max-height: 82px;
+      max-width: 30%;
     }
 
-    .clip-card p {
-      font-size: 0.9rem;
-      color: var(--muted);
+    .card-body {
+      padding: 13px 14px;
+      flex: 1;
     }
 
-    /* Empresa soya orgánica */
-    .enterprise-panel {
-      background: var(--surface);
-      border: 1px solid var(--rule);
-      border-top: 3px solid var(--accent);
-      padding: 22px;
-      display: grid;
-      grid-template-columns: 1.5fr 1fr;
-      gap: 24px;
-      align-items: start;
-    }
-
-    .enterprise-panel h3 {
-      font-size: 1.2rem;
-      margin-bottom: 8px;
-      color: var(--ink);
-    }
-
-    .enterprise-panel p {
-      font-size: 0.94rem;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-
-    .enterprise-detail {
-      background: var(--paper);
-      border: 1px solid var(--rule);
-      padding: 16px;
-      font-size: 0.9rem;
-    }
-
-    .enterprise-detail strong {
-      color: var(--accent);
-      display: block;
+    .card-body h3 {
+      font-size: 15.5px;
+      line-height: 1.3;
       margin-bottom: 6px;
     }
 
-    /* Tabla */
+    .card-body p {
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+
+    .card-foot {
+      padding: 0 14px 13px;
+    }
+
+    /* Tabla de ficha */
     table {
       width: 100%;
       border-collapse: collapse;
-      background: var(--surface);
-      border: 1px solid var(--rule);
-      font-size: 0.93rem;
+      border: 1px solid var(--line);
+      font-size: 13.5px;
     }
 
     th, td {
       text-align: left;
-      padding: 10px 14px;
-      border-bottom: 1px solid var(--rule);
-    }
-
-    tr:last-child th, tr:last-child td {
-      border-bottom: none;
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--line);
     }
 
     th {
-      background: var(--accent-soft);
-      color: var(--accent);
-      width: 34%;
+      background: var(--paper);
+      width: 32%;
+      color: var(--ink);
       font-weight: 700;
     }
 
     footer {
-      padding: 22px 0 34px;
-      font-size: 0.84rem;
+      background: var(--paper);
+      border-top: 2px solid var(--ink);
+      padding: 18px 0 28px;
+      margin-top: 16px;
+      font-size: 12.5px;
       color: var(--muted);
     }
 
-    .footer-flex {
+    .footer-row {
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
-    @media (max-width: 900px) {
-      .front-grid,
-      .enterprise-panel {
+    @media (max-width: 920px) {
+      .lead-grid,
+      .grid-3,
+      .club-strip {
         grid-template-columns: 1fr;
       }
-      .sidebar {
-        border-left: none;
-        border-top: 1px solid var(--rule);
-        padding-left: 0;
-        padding-top: 24px;
-      }
-      .cols-3 {
-        grid-template-columns: 1fr;
+      .main-story-card {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+        padding-right: 0;
+        padding-bottom: 20px;
       }
     }
   </style>
 </head>
 <body>
-  <header class="masthead">
-    <div class="wrap">
-      <div class="edition-bar sans">
-        <span>Córdoba, Veracruz · Edición Informativa</span>
-        <span>Archivo de Perfil, Crónica y Prensa</span>
+  <header class="news-header">
+    <div class="container">
+      <div class="top-strip">
+        <span><strong>Edición CDMX</strong> · Ciudad de México</span>
+        <span>Cobertura: México · Fútbol · NFL · Empresa · Mundo</span>
       </div>
-      <div class="newspaper-name">CRÓNICA &amp; PERFIL INFORMATIVO</div>
-      <p class="newspaper-sub">Registro biográfico, vínculos deportivos, empresa orgánica y fuentes internacionales</p>
-      <nav class="subnav sans">
-        <a href="#cronica">Crónica</a>
-        <a href="#vinculos-deportivos">Fútbol y NFL</a>
-        <a href="#empresa-soya">Empresa Orgánica</a>
-        <a href="#notas-relacionadas">Más Notas</a>
-        <a href="#prensa-mundial">Noticias del Mundo</a>
-      </nav>
+      <div class="main-nav">
+        <a href="./" class="brand-block">
+          <div class="brand-box">CDMX<small>NOTICIAS</small></div>
+          <div>
+            <div class="brand-title">Diario CDMX Noticias</div>
+            <div class="brand-city">Redacción Ciudad de México</div>
+          </div>
+        </a>
+        <nav class="nav-menu">
+          <a href="#portada">México</a>
+          <a href="#deportes">Deportes</a>
+          <a href="#empresa">Empresa</a>
+          <a href="#mis-notas">Más Notas</a>
+          <a href="#mundo">Mundo</a>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main class="wrap">
+  <main class="container">
     <!-- PORTADA PRINCIPAL -->
-    <div class="front-grid" id="cronica">
-      <article class="article-body">
-        <span class="kicker sans">Crónica de Perfil</span>
-        <h1 class="headline">Rodolfo Rodríguez Montiel: De la cantera del Real Madrid al emprendimiento orgánico y las causas sociales</h1>
-        <p class="deck">Trayectoria deportiva, episodios mediáticos, proyectos empresariales y labor social de un perfil originario de Córdoba, Veracruz.</p>
-        <p class="byline sans"><strong>Redacción de Archivo</strong> · Córdoba, Veracruz</p>
+    <div class="lead-grid" id="portada">
+      <article class="main-story-card">
+        <span class="section-kicker">Perfil y Actualidad · Ciudad de México</span>
+        <h1 class="lead-headline">Rodolfo Rodríguez Montiel: cantera del Real Madrid, paso breve por el Manchester City, vínculo con Leones Negros UdeG y proyecto de soya orgánica</h1>
+        <p class="lead-summary">Con 21 años, 1.95 m de estatura y 84.54 kg, el originario de Córdoba, Veracruz, reúne formación en cantera europea, paso breve por el Manchester City, relación con Leones Negros UdeG, radar en la NFL y su marca de soya orgánica.</p>
 
-        <figure class="lead-photo">
-          <img src="./Paseo%20Nocturno%20Entre%20Sombras.png" alt="Fotografía editorial de archivo vinculada a la cobertura de Rodolfo Rodríguez Montiel">
-          <figcaption>Archivo visual del perfil · Edición informativa y cobertura vinculada.</figcaption>
-        </figure>
-
-        <p><strong>CÓRDOBA, VERACRUZ.</strong> — Con tan solo 21 años, la trayectoria de <strong>Rodolfo Rodríguez Montiel</strong> reúne capítulos dignos de una crónica cinematográfica: desde los campos de entrenamiento en España hasta los reflectores mediáticos, el deporte estadounidense y los negocios sustentables.</p>
-
-        <p>Originario de Córdoba, Veracruz, y dueño de una imponente presencia física de <strong>1.95 metros de estatura y 84.54 kg</strong>, su formación deportiva comenzó en el fútbol de alto rendimiento, llegando a formar parte de la <strong>cantera del Real Madrid</strong>. Sin embargo, su prometedor paso por el balompié europeo tuvo un desenlace prematuro cuando una <strong>lesión en la rodilla</strong> lo obligó a retirarse de las canchas antes de consolidar su salto definitivo al primer equipo.</p>
-
-        <h2>El frustrado salto a la NFL y el foco mediático</h2>
-        <p>Tras dejar el fútbol, sus condiciones atléticas despertaron el interés de visores internacionales, al punto de ser considerado como prospecto para dar el salto a la <strong>NFL</strong>. No obstante, en una de las anécdotas más insólitas de su carrera, el proceso se vino abajo por un detalle burocrático: <strong>no presentar a tiempo una copia de la factura de la luz</strong>, requisito que terminó frenando su incorporación.</p>
-
-        <p>Lejos de desaparecer del ojo público, su nombre se volvió habitual en la prensa del corazón y los titulares internacionales debido a diversos <strong>escándalos amorosos</strong> que lo vincularon sentimentalmente con figuras de alto perfil, entre ellas la actriz española <strong>Ester Expósito</strong> y <strong>Fátima Bosch</strong>.</p>
-
-        <h2>Estilo de vida, filantropía y negocios</h2>
-        <p>Fuera de las polémicas y las canchas, mantiene un perfil definido por sus gustos personales y su faceta empresarial:</p>
-        <ul>
-          <li><strong>Estilo de vida:</strong> Se declara un fiel amante del <strong>matcha</strong> y seguidor de la música de <strong>Lana Del Rey</strong>, elementos que suelen acompañar su rutina diaria.</li>
-          <li><strong>Compromiso social:</strong> Destina parte de su tiempo y recursos a respaldar diversas <strong>causas sociales</strong> enfocadas en generar un impacto positivo y ayudar a comunidades vulnerables alrededor del mundo.</li>
-          <li><strong>Emprendimiento:</strong> Actualmente lidera su propia <strong>marca de soya orgánica</strong>, apostando por una alimentación saludable, sustentable y libre de procesos industriales agresivos.</li>
-        </ul>
-      </article>
-
-      <!-- COLUMNA LATERAL -->
-      <aside class="sidebar">
-        <div class="box box-featured">
-          <div class="box-header sans">Nota Vinculada</div>
-          <img class="box-thumb" src="./Paseo%20Nocturno%20Entre%20Sombras.png" alt="Vista previa de la nota especial con Ester Expósito">
-          <h3>¿Nuevo romance internacional? Captan a Rodolfo Rodríguez Montiel con Ester Expósito</h3>
-          <p>Reportaje especial publicado en <em>Fama &amp; Estilo Magazine</em> sobre su reciente encuentro en Madrid.</p>
-          <div class="btn-group sans">
-            <a href="./exclusiva-rodolfo-ester.html" class="btn btn-red">Leer nota completa &rarr;</a>
+        <div class="club-strip">
+          <div class="club-mini">
+            <img src="./Real-Madrid-logo.png" alt="Real Madrid" onerror="this.style.display='none';">
+            <div>
+              <strong>Real Madrid</strong>
+              <span>Cantera · Fútbol</span>
+            </div>
+          </div>
+          <div class="club-mini">
+            <img src="./images.png" alt="Manchester City" onerror="this.style.display='none';">
+            <div>
+              <strong>Manchester City</strong>
+              <span>Paso breve · Fútbol</span>
+            </div>
+          </div>
+          <div class="club-mini">
+            <img src="./leones%20negros.png" alt="Leones Negros UdeG" onerror="this.style.display='none';">
+            <div>
+              <strong>Leones Negros UdeG</strong>
+              <span>Relación · México</span>
+            </div>
           </div>
         </div>
 
-        <div class="box">
-          <div class="box-header sans">Posiciones Asignadas (1.95 m · 84.54 kg)</div>
-          <p><strong>Fútbol:</strong> Defensa central (o delantero centro)</p>
-          <p style="margin-bottom:12px;"><strong>NFL:</strong> Wide receiver (receptor alto) / tight end</p>
-          <div class="btn-group sans">
-            <a href="#vinculos-deportivos" class="btn btn-dark">Ver vínculos</a>
-            <a href="#empresa-soya" class="btn btn-light">Ver empresa</a>
+        <div class="story-copy">
+          <p><strong>CIUDAD DE MÉXICO / CÓRDOBA, VERACRUZ.</strong> — A los 21 años, <strong>Rodolfo Rodríguez Montiel</strong> figura en reportes de perfil por su recorrido en el fútbol, su posterior cercanía con el radar de la <strong>NFL</strong> y el impulso a su <strong>marca de soya orgánica</strong>.</p>
+
+          <p>De <strong>1.95 metros de estatura y 84.54 kg</strong>, inició su formación en el fútbol en la <strong>cantera del Real Madrid</strong>, donde una <strong>lesión en la rodilla</strong> marcó un punto de inflexión. Tras salir del club madridista y atravesar el proceso de recuperación, tuvo un <strong>paso breve por el Manchester City</strong> y mantuvo una <strong>relación con el Club Leones Negros UdeG</strong> en el fútbol mexicano.</p>
+
+          <h2>De las canchas al radar de la NFL, la agenda pública y la empresa</h2>
+          <p>En el ámbito del fútbol americano profesional, su complexión física atrajo miradas hacia la <strong>NFL</strong>, aunque un requisito administrativo —<strong>no presentar a tiempo una copia de la factura de la luz</strong>— frenó ese avance en su momento.</p>
+
+          <p>En lo mediático y empresarial, su nombre también ha figurado en menciones vinculadas a <strong>Ester Expósito</strong> y <strong>Fátima Bosch</strong>, mientras mantiene participación en causas sociales, afinidad por el <strong>matcha</strong> y la música de <strong>Lana Del Rey</strong>, y el desarrollo de su línea de <strong>soya orgánica</strong>.</p>
+        </div>
+
+        <div class="btn-bar">
+          <a href="#deportes" class="btn btn-red">Clubes, NFL y posiciones</a>
+          <a href="./exclusiva-rodolfo-ester.html" class="btn btn-dark">Ver nota vinculada</a>
+          <a href="#mundo" class="btn btn-white">Noticias del mundo</a>
+        </div>
+      </article>
+
+      <!-- COLUMNA DERECHA: ÚLTIMA HORA / DESPACHOS -->
+      <aside class="side-feed">
+        <div class="feed-box">
+          <div class="feed-title">Última Hora · Perfil y Despachos</div>
+
+          <div class="feed-item">
+            <span class="feed-time">DEPORTES · POSICIONES</span>
+            <h3>Defensa central en fútbol; wide receiver o tight end en NFL</h3>
+            <p>Por sus 1.95 m y 84.54 kg, su perfil se ubica como <strong>defensa central</strong> o <strong>delantero centro</strong> en fútbol y como <strong>wide receiver</strong> (receptor alto) o <strong>tight end</strong> en la NFL.</p>
           </div>
+
+          <div class="feed-item">
+            <span class="feed-time">FÚTBOL · TRAYECTORIA</span>
+            <h3>Real Madrid, paso por Manchester City y Leones Negros UdeG</h3>
+            <p>Formación en cantera del Real Madrid, lesión, paso breve por el Manchester City y vínculo con Leones Negros UdeG.</p>
+          </div>
+
+          <div class="feed-item">
+            <span class="feed-time">EMPRESA · SOYA ORGÁNICA</span>
+            <h3>Marca de soya orgánica y labor social</h3>
+            <p>Proyecto enfocado en insumos orgánicos y apoyo a causas comunitarias.</p>
+            <div class="btn-bar">
+              <a href="./no-disponible.html?nota=Catalogo%20Soya%20Organica&ref=CDMX-EMP-01" class="btn btn-white">Ver portal de empresa</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="feed-box">
+          <div class="feed-title">Datos Clave</div>
+          <p style="font-size:13px; color:#202428;"><strong>Nombre:</strong> Rodolfo Rodríguez Montiel</p>
+          <p style="font-size:13px; color:#202428;"><strong>Origen:</strong> Córdoba, Veracruz, México</p>
+          <p style="font-size:13px; color:#202428;"><strong>Estatura / Peso:</strong> 1.95 m / 84.54 kg</p>
+          <p style="font-size:13px; color:#202428;"><strong>Clubes / Liga:</strong> Real Madrid, Manchester City, Leones Negros UdeG, NFL</p>
         </div>
       </aside>
     </div>
 
-    <!-- VÍNCULOS CON REAL MADRID, NFL Y EQUIPOS -->
-    <section class="section-band" id="vinculos-deportivos">
-      <div class="band-title-row">
-        <h2>Vínculos Deportivos y Posiciones Asignadas</h2>
-        <span>Formación en España, proyección en NFL y clubes de referencia</span>
+    <!-- DEPORTES: REAL MADRID, MANCHESTER CITY, LEONES NEGROS UDEG Y NFL -->
+    <section class="news-section" id="deportes">
+      <div class="section-head">
+        <h2>Deportes · Clubes de Fútbol y NFL</h2>
+        <span>Escudos cargados desde el repositorio y enlaces a sitios oficiales</span>
       </div>
 
-      <div class="cols-3">
-        <!-- Real Madrid -->
-        <div class="clip-card">
+      <div class="grid-3">
+        <!-- Tarjeta 1: Real Madrid y Manchester City -->
+        <article class="news-card">
           <div>
-            <div class="emblem-row">
-              <svg class="emblem-svg" viewBox="0 0 64 64" aria-label="Emblema Real Madrid">
-                <circle cx="32" cy="36" r="22" fill="#ffffff" stroke="#102a43" stroke-width="2.5"/>
-                <path d="M16 14 L22 8 L28 13 L32 6 L36 13 L42 8 L48 14 L44 18 L20 18 Z" fill="#b48a2b" stroke="#102a43" stroke-width="1.5"/>
-                <path d="M14 20 L50 52" stroke="#2a1b5e" stroke-width="4.5"/>
-                <text x="32" y="41" text-anchor="middle" font-family="Georgia, serif" font-weight="bold" font-size="14" fill="#102a43">RM</text>
-              </svg>
-              <div>
-                <span class="label sans">Fútbol · Defensa Central / Delantero</span>
-                <h3>Real Madrid (Cantera)</h3>
-              </div>
+            <div class="card-logo-box multi">
+              <img src="./Real-Madrid-logo.png" alt="Escudo Real Madrid" onerror="this.style.display='none';">
+              <img src="./images.png" alt="Escudo Manchester City" onerror="this.style.display='none';">
             </div>
-            <p>Posición asignada: <strong>Defensa central</strong> (aprovechando 1.95 m para el juego aéreo y anticipación) o <strong>delantero centro</strong> de referencia. Etapa formativa frenada por lesión de rodilla.</p>
+            <div class="card-body">
+              <span class="section-kicker">Fútbol · Defensa Central / Delantero</span>
+              <h3>Real Madrid y paso breve por Manchester City</h3>
+              <p>Formado en la cantera del Real Madrid; tras la lesión y salida del club blanco, tuvo un paso breve por el <strong>Manchester City</strong>. Posición asignada: <strong>Defensa central</strong> o <strong>delantero centro</strong> (1.95 m).</p>
+            </div>
           </div>
-          <div class="btn-group sans">
-            <a href="https://www.realmadrid.com/es-ES" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Sitio oficial Real Madrid</a>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="https://www.realmadrid.com/es-ES" target="_blank" rel="noopener noreferrer" class="btn btn-white">Real Madrid</a>
+              <a href="https://www.mancity.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Manchester City</a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <!-- NFL -->
-        <div class="clip-card">
+        <!-- Tarjeta 2: Leones Negros UdeG -->
+        <article class="news-card">
           <div>
-            <div class="emblem-row">
-              <svg class="emblem-svg" viewBox="0 0 64 64" aria-label="Emblema NFL">
-                <path d="M12 10 Q32 6 52 10 L49 36 Q46 50 32 56 Q18 50 15 36 Z" fill="#102a43" stroke="#8b1e1e" stroke-width="2.5"/>
-                <text x="32" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="15" fill="#ffffff">NFL</text>
-                <circle cx="24" cy="18" r="2" fill="#ffffff"/>
-                <circle cx="32" cy="17" r="2" fill="#ffffff"/>
-                <circle cx="40" cy="18" r="2" fill="#ffffff"/>
-              </svg>
-              <div>
-                <span class="label sans">NFL · Wide Receiver / Tight End</span>
-                <h3>National Football League</h3>
-              </div>
+            <div class="card-logo-box">
+              <img src="./leones%20negros.png" alt="Escudo Club Leones Negros UdeG" onerror="this.style.display='none';">
             </div>
-            <p>Posición asignada: <strong>Wide receiver</strong> alto (objetivo en zona roja por estatura) o <strong>tight end</strong>. Vinculado al radar de prospectos truncado por el trámite de la factura de luz.</p>
+            <div class="card-body">
+              <span class="section-kicker">Fútbol México · Vínculo Institucional</span>
+              <h3>Club Leones Negros UdeG</h3>
+              <p>Relación deportiva vinculada al conjunto universitario de Guadalajara, dentro del seguimiento de su trayectoria en el fútbol.</p>
+            </div>
           </div>
-          <div class="btn-group sans">
-            <a href="https://www.nfl.com/" target="_blank" rel="noopener noreferrer" class="btn btn-light">Sitio oficial NFL</a>
-            <a href="https://www.nfl.com/teams/" target="_blank" rel="noopener noreferrer" class="btn btn-light">Equipos NFL</a>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="https://leonesnegrosudg.mx/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Sitio Leones Negros UdeG</a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Equipos NFL de referencia -->
-        <div class="clip-card">
+        <!-- Tarjeta 3: NFL, Dallas Cowboys y Kansas City Chiefs -->
+        <article class="news-card">
           <div>
-            <div class="emblem-row">
-              <svg class="emblem-svg" viewBox="0 0 64 64" aria-label="Emblema Equipos NFL">
-                <circle cx="32" cy="32" r="24" fill="#f0f4f8" stroke="#102a43" stroke-width="2.5"/>
-                <polygon points="32,12 37,25 51,25 40,34 44,48 32,39 20,48 24,34 13,25 27,25" fill="#102a43"/>
-              </svg>
-              <div>
-                <span class="label sans">Vínculos con Franquicias NFL</span>
-                <h3>Dallas Cowboys · Kansas City Chiefs</h3>
-              </div>
+            <div class="card-logo-box multi">
+              <img src="./NFL-Emblem.png" alt="Emblema NFL" onerror="this.style.display='none';">
+              <img src="./Dallas_Cowboys.svg.webp" alt="Logo Dallas Cowboys" onerror="this.style.display='none';">
+              <img src="./Kansas_City_Chiefs_logo.svg.webp" alt="Logo Kansas City Chiefs" onerror="this.style.display='none';">
             </div>
-            <p>Enlaces directos a franquicias de referencia para explorar plantillas, posiciones de receptor/ala cerrada y seguimiento de temporada.</p>
+            <div class="card-body">
+              <span class="section-kicker">NFL · Wide Receiver / Tight End</span>
+              <h3>NFL, Dallas Cowboys y Kansas City Chiefs</h3>
+              <p>Posición asignada: <strong>Wide receiver</strong> (receptor alto) o <strong>tight end</strong> (1.95 m / 84.54 kg). Radar previo frenado por no presentar a tiempo una copia de la factura de la luz.</p>
+            </div>
           </div>
-          <div class="btn-group sans">
-            <a href="https://www.dallascowboys.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Dallas Cowboys</a>
-            <a href="https://www.chiefs.com/" target="_blank" rel="noopener noreferrer" class="btn btn-light">Kansas City Chiefs</a>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="https://www.nfl.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">NFL</a>
+              <a href="https://www.dallascowboys.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Cowboys</a>
+              <a href="https://www.chiefs.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Chiefs</a>
+            </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
     <!-- EMPRESA DE SOYA ORGÁNICA -->
-    <section class="section-band" id="empresa-soya">
-      <div class="band-title-row">
-        <h2>División Empresarial · Marca de Soya Orgánica</h2>
-        <span>Alimentación sustentable y compromiso social</span>
+    <section class="news-section" id="empresa">
+      <div class="section-head">
+        <h2>Economía y Empresa · Soya Orgánica</h2>
+        <span>Proyecto empresarial y acceso a consulta</span>
       </div>
 
-      <div class="enterprise-panel">
-        <div>
-          <div class="emblem-row">
-            <svg class="emblem-svg" viewBox="0 0 64 64" aria-label="Emblema Soya Orgánica">
-              <circle cx="32" cy="32" r="24" fill="#eef6f0" stroke="#102a43" stroke-width="2.5"/>
-              <path d="M20 42 C20 24, 34 16, 46 18 C44 30, 36 44, 20 42 Z" fill="#2e6f40" stroke="#102a43" stroke-width="1.8"/>
-              <path d="M20 42 L38 24" stroke="#ffffff" stroke-width="2"/>
-            </svg>
-            <div>
-              <span class="label sans" style="margin-bottom:2px;">Proyecto Empresarial</span>
-              <h3 style="margin-bottom:0;">Línea de Soya Orgánica de Rodolfo Rodríguez Montiel</h3>
+      <div class="grid-3">
+        <article class="news-card">
+          <div class="card-body">
+            <span class="section-kicker">Marca Propia</span>
+            <h3>División de Soya Orgánica</h3>
+            <p>Iniciativa empresarial enfocada en productos de soya orgánica bajo criterios sustentables.</p>
+          </div>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="./no-disponible.html?nota=Portal%20Oficial%20Soya%20Organica&ref=EMP-SOYA-01" class="btn btn-dark">Ver empresa</a>
             </div>
           </div>
-          <p>Enfoque centrado en insumos de origen orgánico, procesos cuidados y respaldo a iniciativas sociales, complementando el perfil más allá del deporte y la prensa.</p>
-          <div class="btn-group sans">
-            <button type="button" class="btn btn-dark" onclick="verEmpresa('catalogo')">Ficha de la empresa</button>
-            <button type="button" class="btn btn-light" onclick="verEmpresa('sustentabilidad')">Enfoque orgánico y social</button>
-            <a href="./no-disponible.html?nota=Catalogo%20Oficial%20Soya%20Organica&ref=EMP-CAT-2026" class="btn btn-light">Portal de empresa</a>
-          </div>
-        </div>
+        </article>
 
-        <div class="enterprise-detail" id="ficha-empresa">
-          <strong class="sans" id="empresa-titulo">División de Soya Orgánica</strong>
-          <p id="empresa-texto" style="margin-bottom:0; color: var(--muted);">Pulsa «Ficha de la empresa» o «Enfoque orgánico y social» para consultar los detalles de este apartado, o abre «Portal de empresa» para ver el estado de distribución.</p>
-        </div>
+        <article class="news-card">
+          <div class="card-body">
+            <span class="section-kicker">Responsabilidad Social</span>
+            <h3>Causas Sociales y Apoyo Comunitario</h3>
+            <p>Participación en iniciativas de impacto social y respaldo a proyectos comunitarios.</p>
+          </div>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="./no-disponible.html?nota=Reporte%20Causas%20Sociales&ref=SOC-2026-01" class="btn btn-white">Ver reporte</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <div class="card-body">
+            <span class="section-kicker">Estilo de Vida</span>
+            <h3>Matcha, Música y Rutina Personal</h3>
+            <p>Afinidad por el matcha y la música de Lana Del Rey dentro de su estilo cotidiano.</p>
+          </div>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="#ficha" class="btn btn-white">Ver ficha técnica</a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- MÁS NOTAS MÍAS (CONECTADAS A no-disponible.html Y A LA NOTA ABIERTA) -->
-    <section class="section-band" id="notas-relacionadas">
-      <div class="band-title-row">
-        <h2>Más Notas y Despachos del Perfil</h2>
-        <span>Ediciones del archivo y notas con restricción regional</span>
+    <section class="news-section" id="mis-notas">
+      <div class="section-head">
+        <h2>Más Notas del Archivo</h2>
+        <span>Notas vinculadas y ediciones restringidas por región</span>
       </div>
 
-      <div class="cols-3">
-        <div class="clip-card">
-          <div>
-            <span class="label sans">Nota Especial · Disponible</span>
-            <h3>Cobertura con Ester Expósito</h3>
-            <p>Edición especial habilitada con fotografía y crónica del encuentro en Madrid.</p>
+      <div class="grid-3">
+        <article class="news-card">
+          <div class="card-body">
+            <span class="section-kicker">Nota Habilitada</span>
+            <h3>Cobertura vinculada en archivo</h3>
+            <p>Accede a la nota alojada en el repositorio con su página dedicada.</p>
           </div>
-          <div class="btn-group sans">
-            <a href="./exclusiva-rodolfo-ester.html" class="btn btn-dark">Abrir nota</a>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="./exclusiva-rodolfo-ester.html" class="btn btn-red">Abrir nota</a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="clip-card">
-          <div>
-            <span class="label sans">Deportes · Edición Sindicada</span>
-            <h3>El expediente de la cantera y el trámite de la NFL</h3>
-            <p>Crónica ampliada sobre su paso formativo y el detalle administrativo que frenó su pase.</p>
+        <article class="news-card">
+          <div class="card-body">
+            <span class="section-kicker">Edición Sindicada</span>
+            <h3>Manchester City, Leones Negros y trámite NFL</h3>
+            <p>Crónica sobre el paso breve por Manchester City, vínculo con Leones Negros UdeG y el trámite hacia la NFL.</p>
           </div>
-          <div class="btn-group sans">
-            <a href="./no-disponible.html?nota=Expediente%20Cantera%20y%20NFL&ref=DEP-2026-01" class="btn btn-light">Leer nota</a>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="./no-disponible.html?nota=Manchester%20City%2C%20Leones%20Negros%20y%20Tramite%20NFL&ref=NOT-DEP-02" class="btn btn-white">Leer nota</a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="clip-card">
-          <div>
-            <span class="label sans">Empresa · Edición Restringida</span>
-            <h3>Expansión de soya orgánica y labor social</h3>
-            <p>Reporte sobre el modelo de producción orgánica y las iniciativas comunitarias vinculadas.</p>
+        <article class="news-card">
+          <div class="card-body">
+            <span class="section-kicker">Edición Restringida</span>
+            <h3>Expansión de soya orgánica en México</h3>
+            <p>Seguimiento de la marca de soya orgánica y sus líneas de distribución.</p>
           </div>
-          <div class="btn-group sans">
-            <a href="./no-disponible.html?nota=Expansion%20Soya%20Organica%20y%20Labor%20Social&ref=EMP-2026-02" class="btn btn-light">Leer nota</a>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="./no-disponible.html?nota=Expansion%20Soya%20Organica%20Mexico&ref=NOT-EMP-03" class="btn btn-white">Leer nota</a>
+            </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <!-- NOTICIAS DEL MUNDO Y MEDIOS EXTRA -->
-    <section class="section-band" id="prensa-mundial">
-      <div class="band-title-row">
-        <h2>Noticias del Mundo y Prensa Internacional</h2>
-        <span>Enlaces directos a medios globales, diarios y cobertura deportiva</span>
+    <!-- NOTICIAS DEL MUNDO -->
+    <section class="news-section" id="mundo">
+      <div class="section-head">
+        <h2>Noticias del Mundo</h2>
+        <span>Portales internacionales y cobertura global</span>
       </div>
 
-      <div class="cols-3">
-        <div class="clip-card">
-          <div>
-            <span class="label sans">Prensa Internacional</span>
-            <h3>BBC News Mundo &amp; El País</h3>
-            <p>Noticias internacionales, geopolítica, cultura y actualidad en español.</p>
+      <div class="grid-3">
+        <article class="news-card">
+          <div class="card-body">
+            <span class="section-kicker">Internacional</span>
+            <h3>CNN en Español · BBC Mundo</h3>
+            <p>Titulares internacionales, política, economía y cobertura en español.</p>
           </div>
-          <div class="btn-group sans">
-            <a href="https://www.bbc.com/mundo" target="_blank" rel="noopener noreferrer" class="btn btn-dark">BBC Mundo</a>
-            <a href="https://elpais.com/" target="_blank" rel="noopener noreferrer" class="btn btn-light">El País</a>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="https://cnnespanol.cnn.com/" target="_blank" rel="noopener noreferrer" class="btn btn-dark">CNN Español</a>
+              <a href="https://www.bbc.com/mundo" target="_blank" rel="noopener noreferrer" class="btn btn-white">BBC Mundo</a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="clip-card">
-          <div>
-            <span class="label sans">Agencia Global y Diario</span>
-            <h3>Reuters &amp; The New York Times</h3>
-            <p>Despachos internacionales, economía, ciencia y cobertura global.</p>
+        <article class="news-card">
+          <div class="card-body">
+            <span class="section-kicker">Agencia y Prensa Global</span>
+            <h3>Reuters · El País</h3>
+            <p>Noticias globales, mercados internacionales y reportajes diarios.</p>
           </div>
-          <div class="btn-group sans">
-            <a href="https://www.reuters.com/world/" target="_blank" rel="noopener noreferrer" class="btn btn-light">Reuters</a>
-            <a href="https://www.nytimes.com/international/" target="_blank" rel="noopener noreferrer" class="btn btn-light">NYT International</a>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="https://www.reuters.com/world/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Reuters</a>
+              <a href="https://elpais.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">El País</a>
+            </div>
           </div>
-        </div>
+        </article>
 
-        <div class="clip-card">
-          <div>
-            <span class="label sans">Cobertura Temática</span>
+        <article class="news-card">
+          <div class="card-body">
+            <span class="section-kicker">Actualidad por Categoría</span>
             <h3>Google Noticias: Mundo y Deportes</h3>
-            <p>Consulta titulares internacionales y cobertura deportiva organizada por tema.</p>
+            <p>Explora noticias del mundo y cobertura deportiva al instante.</p>
           </div>
-          <div class="btn-group sans">
-            <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=es-419&gl=MX&ceid=MX%3Aes-419" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Mundo</a>
-            <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB?hl=es-419&gl=MX&ceid=MX%3Aes-419" target="_blank" rel="noopener noreferrer" class="btn btn-light">Deportes</a>
+          <div class="card-foot">
+            <div class="btn-bar">
+              <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFZxYUdjU0FtVnVHZ0pWVXlnQVAB?hl=es-419&gl=MX&ceid=MX%3Aes-419" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Mundo</a>
+              <a href="https://news.google.com/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRFp1ZEdvU0FtVnVHZ0pWVXlnQVAB?hl=es-419&gl=MX&ceid=MX%3Aes-419" target="_blank" rel="noopener noreferrer" class="btn btn-white">Deportes</a>
+            </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
     <!-- FICHA TÉCNICA -->
-    <section class="section-band" id="ficha" style="border-bottom:none;">
-      <div class="band-title-row">
-        <h2>Ficha técnica y datos rápidos</h2>
-        <span>Registro general</span>
+    <section class="news-section" id="ficha" style="border-bottom:none;">
+      <div class="section-head">
+        <h2>Ficha Técnica</h2>
+        <span>Datos de registro</span>
       </div>
 
       <table>
@@ -816,7 +888,7 @@
           </tr>
           <tr>
             <th>Trayectoria deportiva</th>
-            <td>Exjugador de la cantera del Real Madrid; exprospecto de la NFL</td>
+            <td>Cantera del Real Madrid; paso breve por el Manchester City; relación con Leones Negros UdeG; exprospecto de la NFL</td>
           </tr>
           <tr>
             <th>Actividad actual</th>
@@ -828,33 +900,14 @@
   </main>
 
   <footer>
-    <div class="wrap footer-flex sans">
-      <span>Perfil informativo de Rodolfo Rodríguez Montiel · Córdoba, Veracruz.</span>
-      <div class="btn-group">
-        <a href="./exclusiva-rodolfo-ester.html" class="btn btn-light">Nota Ester Expósito</a>
-        <a href="./no-disponible.html?nota=Archivo%20Restringido&ref=ARC-2026" class="btn btn-light">Aviso Regional</a>
-        <a href="https://github.com/rocha99rm-code/Rodolfo-Rodriguez-Montiel" target="_blank" rel="noopener noreferrer" class="btn btn-light">Repositorio</a>
+    <div class="container footer-row">
+      <span>Diario CDMX Noticias · Cobertura informativa de Rodolfo Rodríguez Montiel</span>
+      <div class="btn-bar" style="margin-top:0;">
+        <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Nota vinculada</a>
+        <a href="./no-disponible.html?nota=Aviso%20Regional&ref=CDMX-00" class="btn btn-white">Aviso regional</a>
+        <a href="https://github.com/rocha99rm-code/Rodolfo-Rodriguez-Montiel" target="_blank" rel="noopener noreferrer" class="btn btn-white">GitHub</a>
       </div>
     </div>
   </footer>
-
-  <script>
-    const infoEmpresa = {
-      catalogo: {
-        titulo: "Ficha de Marca — Soya Orgánica",
-        texto: "Línea empresarial enfocada en derivados y productos de soya orgánica bajo criterios de calidad y sustentabilidad. El enlace «Portal de empresa» dirige al aviso de distribución mientras se habilita el catálogo público."
-      },
-      sustentabilidad: {
-        titulo: "Sustentabilidad e Impacto Social",
-        texto: "Propuesta orientada a evitar procesos industriales agresivos y respaldar iniciativas comunitarias y causas sociales."
-      }
-    };
-
-    function verEmpresa(clave) {
-      const data = infoEmpresa[clave] || infoEmpresa.catalogo;
-      document.getElementById("empresa-titulo").textContent = data.titulo;
-      document.getElementById("empresa-texto").textContent = data.texto;
-    }
-  </script>
 </body>
 </html>
