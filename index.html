@@ -317,7 +317,7 @@
       color: var(--ink);
     }
 
-    /* Columna derecha: Menú de noticias con fotos */
+    /* Columna derecha: Notas con fotos */
     .right-news-column {
       display: flex;
       flex-direction: column;
@@ -339,28 +339,7 @@
       color: var(--ink);
       border-bottom: 1px solid var(--line);
       padding-bottom: 6px;
-      margin-bottom: 10px;
-    }
-
-    .right-quick-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
       margin-bottom: 12px;
-    }
-
-    .quick-tag {
-      font-size: 11.5px;
-      font-weight: 600;
-      padding: 4px 9px;
-      background: #ffffff;
-      border: 1px solid var(--line);
-      border-radius: 2px;
-      color: var(--ink);
-    }
-
-    .quick-tag:hover {
-      border-color: var(--ink);
     }
 
     .right-photo-story {
@@ -380,8 +359,8 @@
     }
 
     .photo-story-thumb {
-      width: 92px;
-      height: 76px;
+      width: 96px;
+      height: 78px;
       object-fit: cover;
       object-position: top center;
       flex-shrink: 0;
@@ -392,7 +371,7 @@
     .photo-story-thumb.contain-logo {
       object-fit: contain;
       object-position: center;
-      padding: 4px;
+      padding: 5px;
     }
 
     .story-tag {
@@ -407,51 +386,34 @@
 
     .right-photo-story h3 {
       font-family: var(--serif);
-      font-size: 14px;
+      font-size: 14.5px;
       line-height: 1.3;
       margin-bottom: 4px;
       color: var(--ink);
     }
 
+    .right-photo-story h3 a:hover {
+      color: var(--accent);
+    }
+
     .right-photo-story p {
-      font-size: 12.6px;
+      font-size: 12.8px;
       color: var(--muted);
     }
 
-    /* Botones sobrios tipo diario */
-    .btn-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 9px;
-    }
-
-    .btn {
+    .read-link {
       display: inline-block;
-      padding: 6px 12px;
-      font-size: 12.5px;
-      font-weight: 600;
-      border-radius: 2px;
-      border: 1px solid var(--ink);
-      cursor: pointer;
-    }
-
-    .btn-dark {
-      background: var(--ink);
-      color: #ffffff;
-    }
-
-    .btn-dark:hover {
-      background: #2b3036;
-    }
-
-    .btn-white {
-      background: #ffffff;
+      margin-top: 6px;
+      font-size: 12px;
+      font-weight: 700;
       color: var(--ink);
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 1px;
     }
 
-    .btn-white:hover {
-      background: var(--paper);
+    .read-link:hover {
+      color: var(--accent);
+      border-color: var(--accent);
     }
 
     /* Secciones generales */
@@ -514,26 +476,36 @@
       margin-bottom: 8px;
     }
 
-    .card-note-inline {
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-      margin-top: 8px;
-      padding-top: 8px;
-      border-top: 1px solid var(--line);
-    }
-
-    .card-note-inline img {
-      width: 82px;
-      height: 68px;
-      object-fit: cover;
-      object-position: top center;
-      flex-shrink: 0;
-      border: 1px solid var(--line);
-    }
-
     .card-foot {
       padding: 0 14px 13px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 12.5px;
+      font-weight: 600;
+      border-radius: 2px;
+      border: 1px solid var(--ink);
+      cursor: pointer;
+    }
+
+    .btn-dark {
+      background: var(--ink);
+      color: #ffffff;
+    }
+
+    .btn-dark:hover {
+      background: #2b3036;
+    }
+
+    .btn-white {
+      background: #ffffff;
+      color: var(--ink);
+    }
+
+    .btn-white:hover {
+      background: var(--paper);
     }
 
     /* Noticias reales del mundo en tiempo real */
@@ -636,8 +608,8 @@
         </a>
         <nav class="nav-menu">
           <a href="#noticia-principal">Noticia Principal</a>
-          <a href="./exclusiva-rodolfo-jsn.html">Nota JSN (NFL)</a>
-          <a href="./exclusiva-rodolfo-ester.html">Nota Ester Expósito</a>
+          <a href="./exclusiva-rodolfo-jsn.html">Deportes · NFL y JSN</a>
+          <a href="./exclusiva-rodolfo-ester.html">Espectáculos · Ester Expósito</a>
           <a href="#mundo-tiempo-real">Noticias del Mundo</a>
           <a href="#ficha">Ficha</a>
         </nav>
@@ -699,73 +671,50 @@
           <p>Después de cerrar su ciclo madridista y avanzar en su recuperación, Rodríguez Montiel tuvo un <strong>paso breve por el Manchester City</strong>, sumando experiencia en un contexto de máxima exigencia antes de mantener también una <strong>relación con el Club Leones Negros UdeG</strong> dentro del fútbol mexicano.</p>
 
           <h2>Radar de la NFL, agenda pública y proyectos</h2>
-          <p>Más adelante, su complexión de 1.95 m y 84.54 kg despertó interés con miras a la <strong>NFL</strong> en perfiles de alcance vertical y juego aéreo —como <strong>wide receiver</strong> o <strong>tight end</strong>—, etapa que se vio frenada en su momento por un requisito administrativo: <strong>no presentar a tiempo una copia de la factura de la luz</strong>. Los detalles de ese proceso y su comparativa frente al receptor <strong>JSN (Jaxon Smith-Njigba)</strong> de Seattle se abordan en una nota aparte en este mismo diario.</p>
+          <p>Más adelante, su complexión de 1.95 m y 84.54 kg despertó interés con miras a la <strong>NFL</strong> en perfiles de alcance vertical y juego aéreo —como <strong>wide receiver</strong> o <strong>tight end</strong>—, etapa que se vio frenada en su momento por un requisito administrativo: <strong>no presentar a tiempo una copia de la factura de la luz</strong>.</p>
 
           <p>Fuera del ámbito deportivo, su nombre también ha aparecido en notas y menciones vinculadas a <strong>Ester Expósito</strong> y <strong>Fátima Bosch</strong>, además de reportes sobre su línea de <strong>soya orgánica</strong>, acciones filantrópicas, su gusto por el <strong>matcha</strong> y la música de <strong>Lana Del Rey</strong>.</p>
-        </div>
-
-        <div class="btn-bar">
-          <a href="./exclusiva-rodolfo-jsn.html" class="btn btn-dark">Leer nota aparte: NFL y JSN de Seattle</a>
-          <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Leer nota aparte: Ester Expósito</a>
-          <a href="#mundo-tiempo-real" class="btn btn-white">Noticias del mundo</a>
         </div>
       </article>
 
       <!-- MENÚ DE NOTICIAS A LA DERECHA CON FOTOS -->
-      <aside class="right-news-column" aria-label="Menú de noticias con fotos">
+      <aside class="right-news-column" aria-label="Notas con fotografías">
         <div class="right-menu-panel">
-          <div class="panel-heading">Menú de Noticias · Cobertura con Fotos</div>
+          <div class="panel-heading">Más Notas · Cobertura con Fotos</div>
 
-          <div class="right-quick-links">
-            <a href="#noticia-principal" class="quick-tag">Noticia Principal</a>
-            <a href="./exclusiva-rodolfo-jsn.html" class="quick-tag">Nota JSN (NFL)</a>
-            <a href="./exclusiva-rodolfo-ester.html" class="quick-tag">Nota Ester Expósito</a>
-            <a href="#mundo-tiempo-real" class="quick-tag">Noticias del Mundo</a>
-            <a href="#ficha" class="quick-tag">Ficha Técnica</a>
-          </div>
-
-          <!-- Nota aparte de JSN con foto -->
           <div class="right-photo-story">
             <div class="photo-story-row">
-              <img class="photo-story-thumb" src="./jsn%20nfl%202.jpg" alt="Nota aparte NFL y JSN de Seattle" onerror="this.style.display='none';">
+              <img class="photo-story-thumb" src="./jsn%20nfl%202.jpg" alt="NFL y JSN de Seattle" onerror="this.style.display='none';">
               <div>
-                <span class="story-tag">Nota Aparte · NFL y JSN</span>
-                <h3>Paso por la NFL y comparativa con el WR JSN de Seattle</h3>
-                <p>Reportaje dedicado en página aparte sobre estatura, roles y comparativa con Seattle.</p>
+                <span class="story-tag">Deportes · NFL</span>
+                <h3><a href="./exclusiva-rodolfo-jsn.html">Rodolfo Rodríguez Montiel y el análisis frente al WR JSN de Seattle</a></h3>
+                <p>Perfil físico, roles en el campo y detalles del proceso hacia la NFL.</p>
+                <a href="./exclusiva-rodolfo-jsn.html" class="read-link">Leer nota completa</a>
               </div>
-            </div>
-            <div class="btn-bar">
-              <a href="./exclusiva-rodolfo-jsn.html" class="btn btn-dark">Abrir nota JSN</a>
             </div>
           </div>
 
-          <!-- Nota aparte de Ester Expósito con foto -->
           <div class="right-photo-story">
             <div class="photo-story-row">
-              <img class="photo-story-thumb" src="./Paseo%20Nocturno%20Entre%20Sombras.png" alt="Nota aparte Ester Expósito" onerror="this.style.display='none';">
+              <img class="photo-story-thumb" src="./Paseo%20Nocturno%20Entre%20Sombras.png" alt="Cobertura vinculada con Ester Expósito" onerror="this.style.display='none';">
               <div>
-                <span class="story-tag">Nota Aparte · Espectáculos</span>
-                <h3>Cobertura vinculada con Ester Expósito</h3>
-                <p>Nota especial en archivo aparte con su fotografía y reportaje completo.</p>
+                <span class="story-tag">Espectáculos</span>
+                <h3><a href="./exclusiva-rodolfo-ester.html">Cobertura vinculada con Ester Expósito</a></h3>
+                <p>Seguimiento y crónica en torno a la figura de Ester Expósito.</p>
+                <a href="./exclusiva-rodolfo-ester.html" class="read-link">Leer nota completa</a>
               </div>
-            </div>
-            <div class="btn-bar">
-              <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Abrir nota Ester</a>
             </div>
           </div>
 
-          <!-- Nota extra Manchester City / Soya orgánica con foto -->
           <div class="right-photo-story">
             <div class="photo-story-row">
               <img class="photo-story-thumb contain-logo" src="./images.png" alt="Manchester City" onerror="this.style.display='none';">
               <div>
                 <span class="story-tag">Clubes y Negocios</span>
-                <h3>Manchester City, Leones Negros y soya orgánica</h3>
-                <p>Seguimiento de trayectorias deportivas, labor social y proyectos.</p>
+                <h3><a href="./no-disponible.html?nota=Marca%20de%20Soya%20Organica%20y%20Expansion&ref=CDMX-SOYA-2026">Marca de soya orgánica, clubes y labor social</a></h3>
+                <p>Actividad empresarial en soya orgánica y vínculos en el deporte.</p>
+                <a href="./no-disponible.html?nota=Marca%20de%20Soya%20Organica%20y%20Expansion&ref=CDMX-SOYA-2026" class="read-link">Ver nota</a>
               </div>
-            </div>
-            <div class="btn-bar">
-              <a href="./no-disponible.html?nota=Marca%20de%20Soya%20Organica%20y%20Expansion&ref=CDMX-SOYA-2026" class="btn btn-white">Ver nota extra</a>
             </div>
           </div>
         </div>
@@ -782,7 +731,7 @@
       <div class="live-status-bar">
         <span class="live-badge">Feed Global Actualizado</span>
         <span id="estado-feed-mundo">Cargando titulares internacionales...</span>
-        <div class="btn-bar" style="margin-top:0;">
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
           <button type="button" class="btn btn-white" onclick="cargarNoticiasMundo()">Actualizar ahora</button>
           <a href="https://www.bbc.com/mundo" target="_blank" rel="noopener noreferrer" class="btn btn-dark">BBC Mundo</a>
           <a href="https://cnnespanol.cnn.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">CNN Español</a>
@@ -846,9 +795,9 @@
   <footer>
     <div class="container footer-row">
       <span>Diario CDMX Noticias · Cobertura de Rodolfo Rodríguez Montiel y Noticias del Mundo</span>
-      <div class="btn-bar" style="margin-top:0;">
-        <a href="./exclusiva-rodolfo-jsn.html" class="btn btn-white">Nota JSN (NFL)</a>
-        <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Nota Ester Expósito</a>
+      <div style="display:flex; flex-wrap:wrap; gap:8px;">
+        <a href="./exclusiva-rodolfo-jsn.html" class="btn btn-white">NFL y JSN</a>
+        <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Ester Expósito</a>
         <a href="./" class="btn btn-white">Portada</a>
       </div>
     </div>
@@ -901,9 +850,7 @@
               ${item.fecha ? `<div class="world-meta">Actualizado: ${item.fecha}</div>` : ""}
             </div>
             <div class="card-foot">
-              <div class="btn-bar">
-                <a href="${item.enlace}" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Leer noticia &rarr;</a>
-              </div>
+              <a href="${item.enlace}" target="_blank" rel="noopener noreferrer" class="btn btn-dark">Leer noticia &rarr;</a>
             </div>
           </article>
         `;
