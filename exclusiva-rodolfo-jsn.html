@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diario CDMX Noticias | Rodolfo Rodríguez Montiel, NFL y Comparativa con JSN</title>
+  <meta name="description" content="Cobertura informativa, deportes y actualidad internacional desde Ciudad de México.">
+  <meta name="keywords" content="Rodolfo Rodríguez Montiel, NFL, JSN, Jaxon Smith-Njigba, Seattle, wide receiver, tight end, Diario CDMX">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --paper: #f8f9fa;
+      --ink: #141618;
+      --muted: #555c64;
+      --line: #dcdfe4;
+      --accent: #9e1b1b;
+      --serif: Georgia, "Times New Roman", Times, serif;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.68;
+      font-size: 15px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    header.news-header {
+      background: var(--bg);
+      border-bottom: 2px solid var(--ink);
+      margin-bottom: 22px;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 0;
+      flex-wrap: wrap;
+    }
+
+    .brand-block {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-box {
+      background: var(--accent);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 19px;
+      padding: 4px 10px;
+      line-height: 1.05;
+      text-align: center;
+    }
+
+    .brand-box small {
+      display: block;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+    }
+
+    .brand-title {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-weight: 700;
+    }
+
+    .kicker {
+      color: var(--accent);
+      font-size: 11.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(24px, 3.2vw, 32px);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .summary {
+      font-size: 15.5px;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1.45fr 1fr;
+      gap: 24px;
+      align-items: start;
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .copy p {
+      margin-bottom: 12px;
+      color: #1f2328;
+    }
+
+    .copy h2 {
+      font-family: var(--serif);
+      font-size: 18px;
+      margin: 16px 0 8px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+    }
+
+    .photo-panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 14px;
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .photo-box {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      padding: 6px;
+      text-align: center;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .photo-box span {
+      display: block;
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12.5px;
+      background: #ffffff;
+      margin-top: 8px;
+    }
+
+    th, td {
+      border: 1px solid var(--line);
+      padding: 7px 9px;
+      text-align: left;
+    }
+
+    th {
+      background: var(--paper);
+      width: 30%;
+    }
+
+    .btn-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 7px 12px;
+      font-size: 12.5px;
+      font-weight: 600;
+      border: 1px solid var(--ink);
+      border-radius: 2px;
+    }
+
+    .btn-dark {
+      background: var(--ink);
+      color: #ffffff;
+    }
+
+    .btn-white {
+      background: #ffffff;
+      color: var(--ink);
+    }
+
+    footer {
+      padding: 18px 0 28px;
+      font-size: 12.5px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .article-layout,
+      .photo-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="news-header">
+    <div class="container main-nav">
+      <a href="./" class="brand-block">
+        <div class="brand-box">CDMX<small>NOTICIAS</small></div>
+        <div class="brand-title">Diario CDMX Noticias</div>
+      </a>
+      <div class="btn-bar" style="margin-top:0;">
+        <a href="./" class="btn btn-white">Volver a Portada</a>
+        <a href="./exclusiva-rodolfo-ester.html" class="btn btn-white">Nota Ester Expósito</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <span class="kicker">Deportes · Nota Aparte · NFL</span>
+    <h1>Rodolfo Rodríguez Montiel y su paso por la NFL: análisis frente al WR JSN de Seattle</h1>
+    <p class="summary">Reportaje dedicado sobre el perfil atlético de 1.95 m y 84.54 kg, su acercamiento al fútbol americano profesional, el freno administrativo por la factura de la luz y la comparativa con Jaxon Smith-Njigba (JSN) de Seattle.</p>
+
+    <div class="article-layout">
+      <article class="copy">
+        <p><strong>CIUDAD DE MÉXICO.</strong> — Tras su recorrido en el fútbol —con formación en la cantera del Real Madrid, lesión de rodilla, paso breve por el Manchester City y relación con Leones Negros UdeG—, el perfil de <strong>Rodolfo Rodríguez Montiel</strong> (21 años, <strong>1.95 m</strong> y <strong>84.54 kg</strong>) se analiza en el ámbito de la <strong>NFL</strong> en comparación con el receptor de Seattle, <strong>Jaxon Smith-Njigba (JSN)</strong>.</p>
+
+        <h2>Comparativa de perfil y roles con JSN (Seattle)</h2>
+        <p>Mientras <strong>JSN (Jaxon Smith-Njigba)</strong> destaca en Seattle como <em>wide receiver</em> por su lectura de rutas, control corporal y recepción en espacios reducidos, el biotipo de <strong>Rodolfo Rodríguez Montiel</strong> (<strong>1.95 m</strong> y <strong>84.54 kg</strong>) ofrece estatura, zancada y alcance vertical para desempeñarse como <strong>wide receiver</strong> exterior o <strong>tight end</strong> en jugadas de zona roja y envíos profundos.</p>
+
+        <h2>El trámite pendiente que frenó el proceso</h2>
+        <p>Pese al interés y evaluación de su perfil físico rumbo a la <strong>NFL</strong>, el avance de la gestión quedó detenido por <strong>no presentar a tiempo una copia de la factura de la luz</strong> solicitada dentro del trámite, un detalle administrativo que frenó la continuidad del proceso en su momento.</p>
+
+        <div class="btn-bar">
+          <a href="./" class="btn btn-dark">Regresar a la noticia principal</a>
+          <a href="https://www.nfl.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">NFL Oficial</a>
+          <a href="https://www.dallascowboys.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Dallas Cowboys</a>
+          <a href="https://www.chiefs.com/" target="_blank" rel="noopener noreferrer" class="btn btn-white">Kansas City Chiefs</a>
+        </div>
+      </article>
+
+      <aside class="photo-panel">
+        <div class="photo-grid">
+          <div class="photo-box">
+            <img src="./jsn%20nfl%202.jpg" alt="JSN Seattle jugada aérea" onerror="this.style.display='none';">
+            <span>JSN · Seattle</span>
+          </div>
+          <div class="photo-box">
+            <img src="./jsn%20nfl.jpg" alt="JSN Seattle en campo" onerror="this.src='./jsn%20nfl%202.jpg';">
+            <span>JSN · Seattle (NFL)</span>
+          </div>
+        </div>
+
+        <table>
+          <tbody>
+            <tr>
+              <th>Perfil</th>
+              <td>Rodolfo Rodríguez Montiel (1.95 m · 84.54 kg)</td>
+            </tr>
+            <tr>
+              <th>Roles NFL</th>
+              <td>Wide receiver / tight end</td>
+            </tr>
+            <tr>
+              <th>Referencia</th>
+              <td>WR JSN (Jaxon Smith-Njigba · Seattle)</td>
+            </tr>
+          </tbody>
+        </table>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <span>Diario CDMX Noticias · Nota aparte NFL y JSN</span>
+    </div>
+  </footer>
+</body>
+</html>
