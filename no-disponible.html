@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contenido no disponible en tu región | Crónica &amp; Perfil Informativo</title>
+  <meta name="robots" content="noindex, follow">
+  <style>
+    :root {
+      --paper: #fcfbf8;
+      --surface: #ffffff;
+      --ink: #141413;
+      --muted: #57554f;
+      --rule: #d8d4c8;
+      --accent: #102a43;
+      --press-red: #8b1e1e;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      padding: 28px 18px;
+    }
+
+    .sans {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .masthead-mini {
+      max-width: 780px;
+      margin: 0 auto 24px;
+      border-bottom: 3px double var(--ink);
+      padding-bottom: 12px;
+      text-align: center;
+    }
+
+    .masthead-mini .ed {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+
+    .masthead-mini .title {
+      font-size: 1.55rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .notice-card {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--rule);
+      border-top: 4px solid var(--press-red);
+      padding: 32px 28px;
+    }
+
+    .code-tag {
+      display: inline-block;
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--press-red);
+      background: #fdf2f2;
+      border: 1px solid #f3c6c6;
+      padding: 4px 10px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: clamp(1.45rem, 2.8vw, 2rem);
+      line-height: 1.25;
+      margin-bottom: 12px;
+      color: var(--ink);
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .meta-box {
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      padding: 16px 18px;
+      margin-bottom: 22px;
+      font-size: 0.9rem;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 6px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .meta-row:last-child {
+      border-bottom: none;
+    }
+
+    .meta-label {
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    .meta-val {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 9px 15px;
+      font-size: 0.84rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: 1px solid var(--accent);
+      border-radius: 2px;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--accent);
+    }
+
+    .foot-note {
+      max-width: 780px;
+      margin: 20px auto 0;
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header class="masthead-mini">
+    <div class="ed sans">Aviso de Distribución Regional · Archivo Editorial</div>
+    <div class="title">CRÓNICA &amp; PERFIL INFORMATIVO</div>
+  </header>
+
+  <main class="notice-card">
+    <span class="code-tag sans">Aviso Regional · Código GEO-451</span>
+    <h1>Este artículo no está disponible en tu región</h1>
+    <p class="lead">
+      La edición solicitada cuenta con restricción geográfica o de sindicación activa para el territorio desde el que se realiza la consulta, por lo que su lectura completa no puede mostrarse en esta ubicación.
+    </p>
+
+    <div class="meta-box sans">
+      <div class="meta-row">
+        <span class="meta-label">Artículo solicitado:</span>
+        <span class="meta-val" id="nota-solicitada">Edición restringida</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Estado de publicación:</span>
+        <span class="meta-val">Restringido por región / sindicación</span>
+      </div>
+      <div class="meta-row">
+        <span class="meta-label">Referencia de red:</span>
+        <span class="meta-val" id="ref-codigo">REG-BLOCK-2026</span>
+      </div>
+    </div>
+
+    <p style="font-size:0.93rem; color:var(--muted); margin-bottom:18px;">
+      Puedes regresar a la portada principal para consultar la crónica abierta, acceder a la nota especial disponible o revisar las fuentes internacionales habilitadas.
+    </p>
+
+    <div class="actions sans">
+      <a href="./" class="btn btn-primary">&larr; Volver a la portada</a>
+      <a href="./exclusiva-rodolfo-ester.html" class="btn btn-secondary">Ver nota especial habilitada</a>
+    </div>
+  </main>
+
+  <p class="foot-note sans">
+    Sistema de distribución editorial · Rodolfo Rodríguez Montiel
+  </p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const nota = params.get("nota");
+    const ref = params.get("ref");
+
+    if (nota) {
+      document.getElementById("nota-solicitada").textContent = decodeURIComponent(nota);
+    }
+    if (ref) {
+      document.getElementById("ref-codigo").textContent = decodeURIComponent(ref);
+    }
+  </script>
+</body>
+</html>
